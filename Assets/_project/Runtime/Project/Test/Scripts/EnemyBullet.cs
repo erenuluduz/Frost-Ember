@@ -24,7 +24,7 @@ public class Bullet : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
 
         Vector3 direction = player.transform.position - transform.position;
-        rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
+        rb.velocity = new Vector2(direction.x, direction.y).normalized * force; //asd
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
