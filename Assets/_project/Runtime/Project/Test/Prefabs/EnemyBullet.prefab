@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 8449631097176982936}
   - component: {fileID: 1470937836942052976}
   - component: {fileID: 3767222998015239822}
+  - component: {fileID: 1824076349823146415}
   m_Layer: 0
   m_Name: EnemyBullet
   m_TagString: Untagged
@@ -194,3 +195,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 3
+  bulletLife: 0
+--- !u!210 &1824076349823146415
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6166153516744503567}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_SortAtRoot: 0
