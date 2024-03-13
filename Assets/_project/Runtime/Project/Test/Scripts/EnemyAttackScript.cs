@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks.Sources;
 using UnityEngine;
 using static PlasticPipe.Server.MonitorStats;
+using Random = System.Random;
 
 public class EnemyAttackScript : MonoBehaviour
 {
@@ -14,21 +15,21 @@ public class EnemyAttackScript : MonoBehaviour
 
     public Transform bulletSpawnPoint;
 
-    private float timer;
+    [SerializeField]private float timer;
     GameObject bullet;
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player"); //player deðiþkenine "Player" tag'ine sahip GameObject'i tanýmlýyor
+        player = GameObject.FindGameObjectWithTag("Player"); //player deï¿½iï¿½kenine "Player" tag'ine sahip GameObject'i tanï¿½mlï¿½yor
     }
 
     void Update()
     {
         if (attack)
         {
-            timer += Time.deltaTime;
-            if (timer > 1)
+            timer -= Time.deltaTime;
+            if (timer <= 0)
             {
-                timer = 0;
+                timer = UnityEngine.Random.Range(2,5);
                 shoot();
             }
         }

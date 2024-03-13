@@ -9,23 +9,28 @@ public class Bullet : MonoBehaviour
     public float force;
     public float bulletLife;
 
-    private void Update()
-    {
-        bulletLife += Time.deltaTime;
-        if (bulletLife > 6)
-        {
-            Destroy(gameObject);
-        }
-    }
-
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
 
         Vector3 direction = player.transform.position - transform.position;
-        rb.velocity = new Vector2(direction.x, direction.y).normalized * force; //asd
+        rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
     }
+    
+    private void Update()
+    {
+        if (force > 1)
+        {
+            force -= Time.deltaTime;
+        }
+        bulletLife += Time.deltaTime;
+        if (bulletLife > 6)
+        {
+            Destroy(gameObject);
+        }
+    }
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
