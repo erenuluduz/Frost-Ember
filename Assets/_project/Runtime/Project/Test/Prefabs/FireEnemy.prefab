@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: -3051899118745539523}
   m_Layer: 0
   m_Name: FireEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -328,6 +328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 6166153516744503567, guid: b50cd707619bafa4da8d5d421ee8d608, type: 3}
   bulletSpawnPoint: {fileID: 3378549165568691659}
+  timer: 0
 --- !u!1 &6415392899739641826
 GameObject:
   m_ObjectHideFlags: 0

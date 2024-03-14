@@ -9,7 +9,12 @@ public class JoystickController : MonoBehaviour
     Vector2 move;
     public float moveSpeed;
 
-
+    public float health;
+    public float maxHealth = 10;
+    private void Awake()
+    {
+        health = maxHealth;
+    }
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -20,10 +25,21 @@ public class JoystickController : MonoBehaviour
     {
         move.x = Joystick.Horizontal;
         move.y = Joystick.Vertical;
-
     }
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position + move * moveSpeed * Time.fixedDeltaTime);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "EnemyBullet")
+        {
+            if(health > 0)
+            {
+                health--;
+                Debug.Log("Player took damage");
+            }
+            
+        }
     }
 }
