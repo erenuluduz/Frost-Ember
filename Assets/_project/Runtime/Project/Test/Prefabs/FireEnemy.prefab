@@ -255,7 +255,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2549762709188879189}
-  - component: {fileID: 6627618169139331089}
   - component: {fileID: 122030952951391977}
   m_Layer: 0
   m_Name: AttackRange
@@ -279,41 +278,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5165696316696349639}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &6627618169139331089
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3957090738880832144}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 7.5
 --- !u!114 &122030952951391977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329,6 +293,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 6166153516744503567, guid: b50cd707619bafa4da8d5d421ee8d608, type: 3}
   bulletSpawnPoint: {fileID: 3378549165568691659}
   timer: 0
+  maxDistance: 10
 --- !u!1 &6415392899739641826
 GameObject:
   m_ObjectHideFlags: 0

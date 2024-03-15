@@ -11,8 +11,7 @@ public class EnemyScript : MonoBehaviour
     public Transform target;
     private NavMeshAgent agent;
 
-    public byte hp = 3;
-    // Start is called before the first frame update
+    public float hp = 3;
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
@@ -29,10 +28,10 @@ public class EnemyScript : MonoBehaviour
 
         agent.SetDestination(target.position);
         #region Death
-        if (hp == 0)
+        if (hp <= 0)
         {
             // Play "Death" animation here!
-           // Destroy(gameObject);
+            Destroy(gameObject);
         }
         #endregion
 
@@ -41,10 +40,11 @@ public class EnemyScript : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        #region Damage Taken
-        if (collision.gameObject.tag.Equals("PlayerBullet") == true) //There is no PlayerBullet tagged Object yet. Buse will handle that.
+        #region DamageTaken
+        
+        if (collision.gameObject.tag.Equals("PlayerBullet") == true)
         {
             
             // Play "Hurt" animation here!
@@ -54,4 +54,5 @@ public class EnemyScript : MonoBehaviour
         }
         #endregion
     }
+    
 }

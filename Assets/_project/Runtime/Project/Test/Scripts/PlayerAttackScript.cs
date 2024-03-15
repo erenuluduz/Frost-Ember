@@ -10,7 +10,6 @@ public class PlayerAttackScript : MonoBehaviour
 
     private void Awake()
     {
-        playerBullet = GameObject.FindGameObjectWithTag("PlayerBullet");
     }
     void Start()
     {

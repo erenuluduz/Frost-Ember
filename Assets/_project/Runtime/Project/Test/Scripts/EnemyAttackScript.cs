@@ -3,12 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks.Sources;
 using UnityEngine;
+using UnityEngine.Serialization;
 using static PlasticPipe.Server.MonitorStats;
 using Random = System.Random;
 
 public class EnemyAttackScript : MonoBehaviour
 {
-    private bool attack = false;
 
     public GameObject bulletPrefab;
     private GameObject player;
@@ -16,15 +16,17 @@ public class EnemyAttackScript : MonoBehaviour
     public Transform bulletSpawnPoint;
 
     [SerializeField]private float timer;
+    [SerializeField]private float maxDistance = 10;
+    [SerializeField]private float distance;
     GameObject bullet;
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player"); //player de�i�kenine "Player" tag'ine sahip GameObject'i tan�ml�yor
+        player = GameObject.FindGameObjectWithTag("Player"); //player değişkenine "Player" tag'ine sahip GameObject'i tanımlıyor
     }
 
     void Update()
     {
-        if (attack)
+        if (IsPlayerInRange())
         {
             timer -= Time.deltaTime;
             if (timer <= 0)
@@ -40,22 +42,16 @@ public class EnemyAttackScript : MonoBehaviour
         Instantiate(bulletPrefab, bulletSpawnPoint.position, Quaternion.identity);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private bool IsPlayerInRange()
     {
-        if (collision.gameObject.tag == "Player")
+        distance = Vector2.Distance(transform.position, player.transform.position);
+        if (distance < maxDistance)
         {
-            Debug.Log("Player entered attack area");
-            attack = true;
+            return true;
         }
-    }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            Debug.Log("Player exit attack area");
-            attack = false;
-        }
+        return false;
+
     }
 
 }
