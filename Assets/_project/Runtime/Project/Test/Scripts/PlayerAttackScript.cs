@@ -8,20 +8,9 @@ public class PlayerAttackScript : MonoBehaviour
     public GameObject playerBullet;
     public Transform bulletSpawnPoint;
 
-    private void Awake()
+    public void OnClickAttack()
     {
-    }
-    void Start()
-    {
-        
-    }
+        Instantiate(playerBullet, bulletSpawnPoint.position, Quaternion.identity);
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {   
-            Instantiate(playerBullet, bulletSpawnPoint.position, Quaternion.identity);
-        }
     }
 }

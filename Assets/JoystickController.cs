@@ -8,12 +8,13 @@ public class JoystickController : MonoBehaviour
     Rigidbody2D rb;
     Vector2 move;
     public float moveSpeed;
-
-    public float health;
-    public float maxHealth = 10;
+    public int currenHealth;
+    public int maxHealth = 10;
+    public HealthBarScripts healthBar;
     private void Awake()
     {
-        health = maxHealth;
+        currenHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
     void Start()
     {
@@ -34,12 +35,23 @@ public class JoystickController : MonoBehaviour
     {
         if (collision.gameObject.tag == "EnemyBullet")
         {
-            if(health > 0)
+            if (currenHealth > 0)
             {
-                health--;
-                Debug.Log("Player took damage");
+                currenHealth--;
+                healthBar.SetHealth(currenHealth);
+                Debug.Log("Player took --damage-- and current health ---> " + currenHealth);
             }
-            
+        }
+
+        if (collision.gameObject.tag == "HealthPotion")
+        {
+            if (currenHealth > 0)
+            {
+                
+                currenHealth++;
+                healthBar.SetHealth(currenHealth);
+                Debug.Log("Player took ++HealthPotion++ and current health ---> " + currenHealth);
+            }
         }
     }
 }

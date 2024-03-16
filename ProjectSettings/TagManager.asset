@@ -7,6 +7,7 @@ TagManager:
   - EnemyBullet
   - Enemy
   - PlayerBullet
+  - HealthPotion
   layers:
   - Default
   - TransparentFX
