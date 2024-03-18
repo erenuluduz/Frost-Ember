@@ -4,42 +4,31 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class SimpleRandomWalkDungeonGenerator : MonoBehaviour
+public class SimpleRandomWalkDungeonGenerator : AbstractDungeonGenerator
 {
-    [SerializeField]
-    protected Vector2Int startPosition = Vector2Int.zero;
 
     [SerializeField]
-    private int iterations = 10;
-    [SerializeField]
-    public int walkLength = 10;
-    [SerializeField]
-    public bool startRandomlyEachIteration = true;
+    protected SimpleRandomWalkData randomWalkParameters;
 
-    [SerializeField]
-    private TilemapVisualiser tilemapVisualiser;
-
-    public void RunProceduralGeneration()
+    protected override void RunProceduralGeneration()
     {
-        HashSet<Vector2Int> floorPositions = RunRandomWalk();
-        foreach (Vector2Int position in floorPositions)
-        {
-            Debug.Log(position);
-        }
+        HashSet<Vector2Int> floorPositions = RunRandomWalk(randomWalkParameters, startPosition);
+
         tilemapVisualiser.Clear();
         tilemapVisualiser.PaintFloorTiles(floorPositions);
+        WallGenerator.CreateWalls(floorPositions, tilemapVisualiser);
     }
 
-    protected HashSet<Vector2Int> RunRandomWalk()
+    protected HashSet<Vector2Int> RunRandomWalk(SimpleRandomWalkData parameters, Vector2Int position)
     {
-        var currentPosition = startPosition;
+        var currentPosition = position;
         HashSet<Vector2Int> floorPositions = new HashSet<Vector2Int>();
 
-        for (int i = 0; i < iterations; i++)
+        for (int i = 0; i < parameters.iterations; i++)
         {
-            var path = ProceduralGenerationAlgorithms.SimpleRandomWalk(currentPosition, walkLength);
-            floorPositions.UnionWith(path);
-            if (startRandomlyEachIteration)
+            var path = ProceduralGenerationAlgorithms.SimpleRandomWalk(currentPosition, parameters.walkLength);
+            floorPositions.UnionWith(path); //path içerisindeki konumlarý floorPositions içine atýyor ve kopya olmasýný engelliyor
+            if (parameters.startRandomlyEachIteration)
             {
                 currentPosition = floorPositions.ElementAt(UnityEngine.Random.Range(0, floorPositions.Count));
             }

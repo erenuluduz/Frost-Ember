@@ -3,13 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.WSA;
 
 public class TilemapVisualiser : MonoBehaviour
 {
     [SerializeField]
-    private Tilemap floorTilemap;
+    private Tilemap floorTilemap, wallTilemap;
     [SerializeField]
-    private TileBase floorTile;
+    private TileBase floorTile, wallTop; //bir array olarak atayýp içerisinden rastgele seçebiliriz.
 
     public void PaintFloorTiles(IEnumerable<Vector2Int> floorPositions)
     {
@@ -33,5 +34,11 @@ public class TilemapVisualiser : MonoBehaviour
     public void Clear()
     {
         floorTilemap.ClearAllTiles();
+        wallTilemap.ClearAllTiles();
+    }
+
+    internal void PaintSingleBasicWall(Vector2Int position)
+    {
+        PaintSingleTile(wallTilemap, wallTop, position);
     }
 }
