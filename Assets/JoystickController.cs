@@ -14,7 +14,7 @@ public class JoystickController : MonoBehaviour
     private void Awake()
     {
         currenHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+        //healthBar.SetMaxHealth(maxHealth);
     }
     void Start()
     {
