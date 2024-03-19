@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class JoystickController : MonoBehaviour
 {
@@ -11,6 +13,13 @@ public class JoystickController : MonoBehaviour
     public int currenHealth;
     public int maxHealth = 10;
     public HealthBarScripts healthBar;
+    [SerializeField] float dashSpeed = 10f;
+    [SerializeField] float dashDuration = 1f;
+    [SerializeField] float dashCooldown = 1f;
+    bool isDashing;
+    bool canDash = false;
+
+
     private void Awake()
     {
         currenHealth = maxHealth;
@@ -19,17 +28,41 @@ public class JoystickController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        canDash = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (isDashing)
+        {
+            return;
+        }
         move.x = Joystick.Horizontal;
         move.y = Joystick.Vertical;
+
+        if (Input.GetKeyDown(KeyCode.D) && canDash)
+        {
+            Debug.Log("KEY PRESSED");
+            IsDashed();
+            //StartCoroutine(Dash());
+        }
+
     }
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + move * moveSpeed * Time.fixedDeltaTime);
+        
+       
+        if (canDash)
+        {
+            rb.MovePosition(rb.position + move * moveSpeed * dashSpeed * Time.fixedDeltaTime);
+            //canDash = false;
+        }
+        else
+        {
+            rb.MovePosition(rb.position + move * moveSpeed * Time.fixedDeltaTime);
+        }
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -39,7 +72,7 @@ public class JoystickController : MonoBehaviour
             {
                 currenHealth--;
                 healthBar.SetHealth(currenHealth);
-                Debug.Log("Player took --damage-- and current health ---> " + currenHealth);
+                //bug.Log("Player took --damage-- and current health ---> " + currenHealth);
             }
         }
 
@@ -50,8 +83,26 @@ public class JoystickController : MonoBehaviour
                 
                 currenHealth++;
                 healthBar.SetHealth(currenHealth);
-                Debug.Log("Player took ++HealthPotion++ and current health ---> " + currenHealth);
+               //ebug.Log("Player took ++HealthPotion++ and current health ---> " + currenHealth);
             }
         }
     }
+
+    //private IEnumerator Dash()
+    //{
+    //    canDash = false;
+    //    isDashing = true;
+    //    rb.velocity = new Vector2(move.x * dashSpeed, move.y * moveSpeed * dashSpeed * Time.fixedDeltaTime);
+    //    yield return new WaitForSeconds(dashDuration);
+    //    isDashing = false;
+
+    //    yield return new WaitForSeconds(dashCooldown);
+    //    canDash = true;
+    //}
+
+    private void IsDashed()
+    {
+        canDash = true;
+    }
+
 }
