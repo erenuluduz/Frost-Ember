@@ -6,9 +6,181 @@
   <component name="ChangeListManager">
     <list default="true" id="f7950e43-ff9e-4a67-9dd3-127c74a1b232" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kar-adami/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kar-adami/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/JoystickController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JoystickController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/RandomDungeonGeneratorEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/RandomDungeonGeneratorEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Documentaion.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Documentaion.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Examples.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Examples/Example Scene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Examples/Example Scene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Examples/Ground.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Examples/Ground.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Examples/JoystickPlayerExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Examples/JoystickPlayerExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Examples/JoystickSetterExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Examples/JoystickSetterExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Examples/Player.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Examples/Player.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Prefabs/Dynamic Joystick.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Prefabs/Dynamic Joystick.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Prefabs/Floating Joystick.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Prefabs/Floating Joystick.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Prefabs/Variable Joystick.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Prefabs/Variable Joystick.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Editor/DynamicJoystickEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Editor/DynamicJoystickEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Editor/FloatingJoystickEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Editor/FloatingJoystickEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Editor/VariableJoystickEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Editor/VariableJoystickEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Joysticks/DynamicJoystick.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Joysticks/DynamicJoystick.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JoystickController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JoystickController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/GameAssembly.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/GameAssembly.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/AgentOverride2dEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/AgentOverride2dEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/CollectSources2dEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/CollectSources2dEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/CollectSourcesCache2dEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/CollectSourcesCache2dEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/NavMeshAgentAttributePropertyDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/NavMeshAgentAttributePropertyDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/NavMeshAreaAttributePropertyDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/NavMeshAreaAttributePropertyDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/NavMeshAssetManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/NavMeshAssetManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/NavMeshComponentsGUIUtility.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/NavMeshComponentsGUIUtility.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/NavMeshLinkEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/NavMeshLinkEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/NavMeshModifierEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/NavMeshModifierEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/NavMeshModifierTilemapEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/NavMeshModifierTilemapEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/NavMeshModifierVolumeEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/NavMeshModifierVolumeEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/RootSources2dEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Editor/RootSources2dEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/AgentOverride2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/AgentOverride2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/AgentRotate2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/AgentRotate2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/AgentRotateSmooth2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/AgentRotateSmooth2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/CollectSources2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/CollectSources2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/CollectSourcesCache2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/CollectSourcesCache2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/NavMeshAgentAttribute.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/NavMeshAgentAttribute.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/NavMeshAreaAttribute.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/NavMeshAreaAttribute.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/NavMeshBuilder2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/NavMeshBuilder2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/NavMeshBuilderState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/NavMeshBuilderState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/NavMeshComponents.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/NavMeshComponents.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/NavMeshExtension.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/NavMeshExtension.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/NavMeshExtensionsProvider.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/NavMeshExtensionsProvider.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/NavMeshLink.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/NavMeshLink.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/NavMeshModifier.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/NavMeshModifier.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/NavMeshModifierTilemap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/NavMeshModifierTilemap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/NavMeshModifierVolume.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/NavMeshModifierVolume.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/NavMeshSurface.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/NavMeshSurface.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/RootSources2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/RootSources2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/RotateAgentInstantly.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/RotateAgentInstantly.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/RotateAgentSmoothly.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/NavMeshComponents/Scripts/RotateAgentSmoothly.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Prefabs/EnemyBullet.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Prefabs/EnemyBullet.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Prefabs/FireEnemy.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Prefabs/FireEnemy.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Prefabs/Player.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Prefabs/Player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Prefabs/PlayerBullet.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Prefabs/PlayerBullet.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Prefabs/PlayerCamera.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Prefabs/PlayerCamera.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Dungeon_Tileset.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Dungeon_Tileset.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/AbstractDungeonGenerator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/AbstractDungeonGenerator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/CorridorFirstDungeonGenerator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/CorridorFirstDungeonGenerator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/Data.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/Data/SimpleRandomWalkData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/Data/SimpleRandomWalkData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/Data/SimpleRandomWalkParameters_BigDungeon.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/Data/SimpleRandomWalkParameters_BigDungeon.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/Data/SimpleRandomWalkParameters_MediumDungeon.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/Data/SimpleRandomWalkParameters_MediumDungeon.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/Data/SimpleRandomWalkParameters_SmallDungeon.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/Data/SimpleRandomWalkParameters_SmallDungeon.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/Data/SimpleRandomWalkParameters_SmallerDungeon.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/Data/SimpleRandomWalkParameters_SmallerDungeon.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/ProceduralGenerationAlgorithms.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/ProceduralGenerationAlgorithms.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/RoomFirstDungeonGenerator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/RoomFirstDungeonGenerator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/SimpleRandomWalkDungeonGenerator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/SimpleRandomWalkDungeonGenerator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/TilemapVisualiser.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/TilemapVisualiser.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/WallGenerator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/ProcedurallyGenerated/Scripts/WallGenerator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/CellController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/CellController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/DoorController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/DoorController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/EnemyAttackScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/EnemyAttackScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/EnemyBullet.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/EnemyBullet.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/EnemyNavigation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/EnemyNavigation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/EnemyScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/EnemyScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/FireBallScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/FireBallScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/FirePlaceAttack.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/FirePlaceAttack.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/HealthBarScripts.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/HealthBarScripts.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/PauseMenuScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/PauseMenuScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/PlayerAttackScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/PlayerAttackScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/PlayerBullet.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/PlayerBullet.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/PlayerController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/PlayerController.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Scenes/Launcher.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Scenes/Launcher.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +191,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f7237cf7abef49bfbb552d7eb076e422174200/37/dfc532fd/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Model/PlayerModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/HealthBarScripts.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/PauseMenuScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/PlayerAttackScript.cs" root0="FORCE_HIGHLIGHTING" />
@@ -34,27 +206,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Busecik&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Busecik",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;/Users/derslik3-14/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache&quot;,
-      &quot;/Users/derslik3-14/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache&quot;,
-      &quot;/Users/derslik3-14/.local/share/Symbols/src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/derslik3-12/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache",
+      "/Users/derslik3-12/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache",
+      "/Users/derslik3-12/.local/share/Symbols/src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.19f1/Unity.app/Contents/MacOS/Unity" />
@@ -104,6 +276,7 @@
       <workItem from="1710312377582" duration="1887000" />
       <workItem from="1710848098789" duration="741000" />
       <workItem from="1710850768694" duration="599000" />
+      <workItem from="1710926758236" duration="6016000" />
     </task>
     <servers />
   </component>
