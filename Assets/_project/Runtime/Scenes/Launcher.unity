@@ -8162,9 +8162,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4002307058689371690, guid: 4944c96d7654b074dbde791ffeb5a4a7, type: 3}
+      propertyPath: timer
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002307058689371690, guid: 4944c96d7654b074dbde791ffeb5a4a7, type: 3}
       propertyPath: joystick
       value: 
       objectReference: {fileID: 1812440269}
+    - target: {fileID: 4002307058689371690, guid: 4944c96d7654b074dbde791ffeb5a4a7, type: 3}
+      propertyPath: dashTimer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4002307058689371690, guid: 4944c96d7654b074dbde791ffeb5a4a7, type: 3}
       propertyPath: healthBar
       value: 

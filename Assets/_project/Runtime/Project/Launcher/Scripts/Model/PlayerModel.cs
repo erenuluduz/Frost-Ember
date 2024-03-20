@@ -5,6 +5,7 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Serialization;
+using UnityEngine.UIElements.Experimental;
 
 public class PlayerModel : MonoBehaviour
 {
@@ -22,77 +23,78 @@ public class PlayerModel : MonoBehaviour
     [SerializeField]
     private HealthBarScripts healthBar;
     
+
     [SerializeField]
-    private float dashSpeed = 10f;
-    [SerializeField]
-    private float dashDuration = 1f;
-    [SerializeField]
-    private float dashCooldown = 1f;
+    private float currentSpeed;
     [SerializeField]
     private float moveSpeed;
-    
     [SerializeField]
-    private int currenHealth;
+    private float dashSpeed;
+
+    [SerializeField]
+    private int currentHealth;
     [SerializeField]
     private int maxHealth = 10;
-    
+
     [SerializeField]
-    private bool isDashing;
+    private float timer = 0.2f;
+
     [SerializeField]
-    private bool canDash = false;
+    private float dashTimer = 0;
+
+    [SerializeField]
+    private bool dashing;
+
+    [SerializeField]
+    private bool invincible;
+
 
 
     private void Awake()
     {
-        currenHealth = maxHealth;
+        currentHealth = maxHealth;
         //healthBar.SetMaxHealth(maxHealth);
     }
     private void Start()
     {
+        currentSpeed = moveSpeed;
+        dashSpeed = 20;
         rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     private void Update()
     {
-        if (isDashing)
-        {
-            return;
-        }
+        
         move.x = joystick.Horizontal;
         move.y = joystick.Vertical;
 
-        if (Input.GetKeyDown(KeyCode.D) && canDash)
-        {
-            Debug.Log("KEY PRESSED");
-            IsDashed();
-            //StartCoroutine(Dash());
-        }
-
+        Dashing();
     }
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + move * moveSpeed * Time.fixedDeltaTime);
+        Move();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("EnemyBullet"))
         {
-            if (currenHealth > 0)
+            if (currentHealth > 0 && invincible ==false)
             {
-                currenHealth--;
-                healthBar.SetHealth(currenHealth);
+                currentHealth--;
+                healthBar.SetHealth(currentHealth);
                 //Debug.Log("Player took --damage-- and current health ---> " + currenHealth);
+                Destroy(collision.gameObject);
             }
         }
 
         if (collision.gameObject.CompareTag("HealthPotion"))
         {
-            if (currenHealth > 0)
+            if (currentHealth > 0)
             {
                 
-                currenHealth++;
-                healthBar.SetHealth(currenHealth);
+                currentHealth++;
+                healthBar.SetHealth(currentHealth);
                //Debug.Log("Player took ++HealthPotion++ and current health ---> " + currenHealth);
             }
         }
@@ -104,21 +106,37 @@ public class PlayerModel : MonoBehaviour
 
     }
 
-    //private IEnumerator Dash()
-    //{
-    //    canDash = false;
-    //    isDashing = true;
-    //    rb.velocity = new Vector2(move.x * dashSpeed, move.y * moveSpeed * dashSpeed * Time.fixedDeltaTime);
-    //    yield return new WaitForSeconds(dashDuration);
-    //    isDashing = false;
-
-    //    yield return new WaitForSeconds(dashCooldown);
-    //    canDash = true;
-    //}
-
-    private void IsDashed()
+    private void Move()
     {
-        canDash = true;
+        rb.MovePosition(rb.position + move * currentSpeed * Time.fixedDeltaTime);
+    }
+
+    public void Dashing()
+    {
+
+        dashTimer = 3;
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            currentSpeed = dashSpeed;
+            dashing = true;
+            invincible = true;
+        }
+
+        if (dashing)
+        {
+        timer -= Time.deltaTime;
+
+            if (timer <= 0)
+            {
+                timer = 0.2f;
+                currentSpeed = moveSpeed;
+                dashing = false;
+                invincible = false;
+            }
+        }
+        
+
     }
 
 }
