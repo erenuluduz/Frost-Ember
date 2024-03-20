@@ -2,7 +2,8 @@
     "name": "GameAssembly",
     "rootNamespace": "",
     "references": [
-        "JoystickAssembly"
+        "JoystickAssembly",
+        "Unity.TextMeshPro"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

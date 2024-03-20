@@ -1,46 +1,54 @@
-using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Button = UnityEngine.UI.Button;
+using TMPro;
+using UnityEngine.UI;
+using System.Threading.Tasks;
 
-namespace _project.Runtime.Project.Test.Scripts
+namespace _project.Runtime.Project.UI.Scripts.View
 {
     public class PauseMenuScript : MonoBehaviour
     {
         public static bool _pauseMenu = false;
         public GameObject pauseMenuUI;
+        public GameObject countdownUI;
+        public TMP_Text countdownText;
 
         public void OnClickOption()
-        { 
-            _pauseMenu = true;
+        {
+            pauseMenuUI.SetActive(true);
+            Time.timeScale = 0f;
         }
 
-        private void Update()
+        async Task Countdown(int seconds)
         {
-            if (_pauseMenu == true)
-                Pause();
-            else
-                Resume();
+            int counter = seconds;
+            while (counter > 0)
+            {
+                countdownText.text = counter.ToString();
+                counter--;
+                await Task.Delay(1000); 
+            }
+            countdownText.text = "GO!";
+            await Task.Delay(1000); 
+
+            Time.timeScale = 1f;
+            countdownUI.SetActive(false);
         }
 
         public void Resume()
         {
             pauseMenuUI.SetActive(false);
-            Time.timeScale = 1f;
-            _pauseMenu = false;
-        }
+            countdownUI.SetActive(true);
 
-        public void Pause()
-        {
-            pauseMenuUI.SetActive(true);
-            Time.timeScale = 0f;
-            _pauseMenu = true;
+            _ = Countdown(3); // Asenkron fonksiyonu başlat
         }
 
         public void Reset()
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            _pauseMenu = false;
-        }
+            pauseMenuUI.SetActive(false);
+            Time.timeScale = 1f;
+        } 
     }
 }
