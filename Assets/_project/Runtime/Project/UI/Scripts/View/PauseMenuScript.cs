@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
 using System.Threading.Tasks;
+using DG.Tweening;
 
 namespace _project.Runtime.Project.UI.Scripts.View
 {
@@ -13,6 +15,17 @@ namespace _project.Runtime.Project.UI.Scripts.View
         public GameObject pauseMenuUI;
         public GameObject countdownUI;
         public TMP_Text countdownText;
+        public Image canvasGroup;
+        private float fadeDuration = 2f;
+
+        private void Start()
+        {
+            canvasGroup.DOFade(0f, fadeDuration).OnComplete(() =>
+            {
+                canvasGroup.gameObject.SetActive(false);
+            });
+           
+        }
 
         public void OnClickOption()
         {

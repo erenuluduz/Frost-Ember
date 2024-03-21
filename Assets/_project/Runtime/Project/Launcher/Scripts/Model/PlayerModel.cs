@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Serialization;
@@ -48,6 +49,9 @@ public class PlayerModel : MonoBehaviour
     [SerializeField]
     private bool invincible;
 
+    public float camStartSize = 3f;
+    public float camEndSize = 5f;
+    public float camZoomDuration = 2f;
 
 
     private void Awake()
@@ -60,6 +64,12 @@ public class PlayerModel : MonoBehaviour
         currentSpeed = moveSpeed;
         dashSpeed = 20;
         rb = GetComponent<Rigidbody2D>();
+        
+        GameObject mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+        
+        mainCamera.GetComponent<Camera>().orthographicSize = camStartSize;
+        
+        mainCamera.GetComponent<Camera>().DOOrthoSize(camEndSize, camZoomDuration).SetEase(Ease.Linear);
     }
 
     // Update is called once per frame

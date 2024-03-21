@@ -3,7 +3,8 @@
     "rootNamespace": "",
     "references": [
         "JoystickAssembly",
-        "Unity.TextMeshPro"
+        "Unity.TextMeshPro",
+        "DOTween.Modules"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
