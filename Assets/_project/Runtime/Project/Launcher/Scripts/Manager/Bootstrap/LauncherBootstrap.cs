@@ -1,18 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
+using _project.Runtime.Bundle;
+using _project.Runtime.Core.UI.Scripts.Manager;
 using UnityEngine;
 
-public class LauncherBootstrap : MonoBehaviour
+namespace _project.Runtime.Project.Launcher.Scripts.Manager.Bootstrap
 {
-    // Start is called before the first frame update
-    void Start()
+    public class LauncherBootstrap : MonoBehaviour
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        private async void Awake()
+        {
+            BundleModel.Instance = new BundleModel();
+            
+            var screenManager = ScreenManager.Instance;
+            
+            await screenManager.OpenScreen(ScreenKeys.MainMenuScreen, ScreenLayerKeys.FirstLayer);
+        }
     }
 }

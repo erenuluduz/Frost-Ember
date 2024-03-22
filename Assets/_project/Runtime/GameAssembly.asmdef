@@ -4,7 +4,9 @@
     "references": [
         "JoystickAssembly",
         "Unity.TextMeshPro",
-        "DOTween.Modules"
+        "DOTween.Modules",
+        "Unity.Addressables",
+        "Unity.ResourceManager"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

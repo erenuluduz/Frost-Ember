@@ -1,18 +1,57 @@
-using System.Collections;
 using System.Collections.Generic;
+using _project.Runtime.Core.Singleton;
 using UnityEngine;
+using System;
+using System.Threading.Tasks;
+using _project.Runtime.Bundle;
 
-public class ScreenManager : MonoBehaviour
+namespace _project.Runtime.Core.UI.Scripts.Manager
 {
-    // Start is called before the first frame update
-    void Start()
+    [Serializable]
+    public class ScreenLayer
     {
-        
+        public string Key;
+        public Transform Layer;
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    public class ScreenManager : SingletonBehaviour<ScreenManager>
     {
-        
+        public List<ScreenLayer> Layers;
+
+        public async Task<GameObject> OpenScreen(string screenKey, string layerKey, bool clearLayer = true)
+        {
+            Transform layer = null;
+
+            foreach (var screenLayer in Layers)
+            {
+                if (screenLayer.Key == layerKey)
+                {
+                    layer = screenLayer.Layer;
+                    break;
+                }
+            }
+
+            if (layer == null)
+            {
+                Debug.Log("Layer not found");
+            }
+
+            var loadPrefab = await BundleModel.Instance.LoadPrefab(screenKey, layer);
+            return loadPrefab;
+        }
+        public void ClearLayer(string layerKey)
+        {
+            foreach (var screenLayer in Layers)
+            {
+                if (screenLayer.Key == layerKey)
+                {
+                    var layer = screenLayer.Layer;
+                    foreach (Transform child in layer)
+                    {
+                        Destroy(child.gameObject);
+                    }
+                }
+            }
+        }
     }
 }

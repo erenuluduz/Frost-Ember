@@ -6,16 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="f7950e43-ff9e-4a67-9dd3-127c74a1b232" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kar-adami/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kar-adami/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Bundle/BundleModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Bundle/BundleModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Core/Singleton/SingletonBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Core/Singleton/SingletonBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Core/Singleton/SingletonModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Core/Singleton/SingletonModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Core/UI/Scripts/Manager/ScreenManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Core/UI/Scripts/Manager/ScreenManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/GameAssembly.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/GameAssembly.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Model/PlayerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Model/PlayerModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Scripts/View/PauseMenuScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Scripts/View/PauseMenuScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Scenes/Launcher.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Scenes/Launcher.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Manager/Bootstrap/LauncherBootstrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Manager/Bootstrap/LauncherBootstrap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Manager/Bootstrap/ScreenKeys.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Manager/Bootstrap/ScreenKeys.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Manager/Bootstrap/ScreenLayerKeys.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Manager/Bootstrap/ScreenLayerKeys.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Scripts/MenuScripts/MenuScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Scripts/MenuScripts/MenuScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Scenes/Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
@@ -44,6 +45,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Busecik",
@@ -90,10 +92,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="1763">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="1763" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -115,6 +117,8 @@
       <workItem from="1710926758236" duration="6016000" />
       <workItem from="1710939504141" duration="10757000" />
       <workItem from="1711015308460" duration="7590000" />
+      <workItem from="1711092757723" duration="2802000" />
+      <workItem from="1711095744815" duration="7004000" />
     </task>
     <servers />
   </component>
@@ -123,4 +127,23 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_project/Runtime/Core/Singleton/SingletonBehaviour.cs</url>
+          <line>17</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/_project/Runtime/Core/Singleton/SingletonBehaviour.cs" initialLine="17" containingFunctionPresentation="Property 'Instance'">
+            <startOffsets>
+              <option value="389" />
+            </startOffsets>
+            <endOffsets>
+              <option value="437" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
 </project>

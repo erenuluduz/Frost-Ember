@@ -1,18 +1,32 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class SingletonBehaviour : MonoBehaviour
+namespace _project.Runtime.Core.Singleton
 {
-    // Start is called before the first frame update
-    void Start()
+    public class SingletonBehaviour<T> : MonoBehaviour where T : MonoBehaviour
     {
-        
-    }
+        private static T _instance;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public static T Instance
+        {
+            get
+            {
+                if (_instance != null)
+                {
+                    return _instance;
+                }
+
+                if (FindObjectsOfType(typeof(T)) is T[] managers)
+                {
+                    if (managers.Length > 0)
+                    {
+                        return _instance = managers[0];
+                    }
+                }
+
+                var o = new GameObject(typeof(T).Name, typeof(T));
+                _instance = o.GetComponent<T>();
+                return _instance;
+            }
+        }
     }
 }

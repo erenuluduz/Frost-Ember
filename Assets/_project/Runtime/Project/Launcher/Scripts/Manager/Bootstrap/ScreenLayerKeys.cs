@@ -1,18 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class ScreenLayerKeys : MonoBehaviour
+namespace _project.Runtime.Project.Launcher.Scripts.Manager.Bootstrap
 {
-    // Start is called before the first frame update
-    void Start()
+    public static class  ScreenLayerKeys
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public const string FirstLayer = "FirstLayer";
     }
 }

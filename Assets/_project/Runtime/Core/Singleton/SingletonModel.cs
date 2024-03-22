@@ -1,18 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class SingletonModel : MonoBehaviour
+namespace _project.Runtime.Core.Singleton
 {
-    // Start is called before the first frame update
-    void Start()
+    public class SingletonModel<T>
     {
-        
-    }
+        private static T _instance;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public static T Instance
+        {
+            get
+            {
+                return _instance;
+            }
+            set
+            {
+                _instance = value;
+            }
+        }
     }
 }
