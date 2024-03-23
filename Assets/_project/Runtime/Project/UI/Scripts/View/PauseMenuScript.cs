@@ -11,18 +11,17 @@ namespace _project.Runtime.Project.UI.Scripts.View
 {
     public class PauseMenuScript : MonoBehaviour
     {
-        public static bool _pauseMenu = false;
         public GameObject pauseMenuUI;
         public GameObject countdownUI;
         public TMP_Text countdownText;
-        public Image canvasGroup;
+        public Image blackScreen;
         private float fadeDuration = 2f;
 
         private void Start()
         {
-            canvasGroup.DOFade(0f, fadeDuration).OnComplete(() =>
+            blackScreen.DOFade(0f, fadeDuration).OnComplete(() =>
             {
-                canvasGroup.gameObject.SetActive(false);
+                blackScreen.gameObject.SetActive(false);
             });
            
         }
@@ -62,6 +61,16 @@ namespace _project.Runtime.Project.UI.Scripts.View
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             pauseMenuUI.SetActive(false);
             Time.timeScale = 1f;
-        } 
+        }
+
+
+
+
+        public void OnLevelComplete()
+        {
+            var levelObject = LevelObject.Instance;
+
+            levelObject.UnlockedLevel();
+        }
     }
 }

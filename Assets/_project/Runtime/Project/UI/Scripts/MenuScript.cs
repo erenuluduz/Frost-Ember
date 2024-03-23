@@ -9,30 +9,36 @@ namespace _project.Runtime.Project.UI.Scripts.MenuScripts
 {
     public class MenuScript : MonoBehaviour
     {
-        public Image canvasGroup;
-        public float fadeDuration = 2f;
+        public float fadeDuration = 0.5f;
 
-        public void OnClickPlay()
+        public void OnClickContinue()
         {
-            canvasGroup.gameObject.SetActive(true);
-            canvasGroup.color = new Color(0f, 0f, 0f,0f);
-            // Siyah ekranı yavaşça açma animasyonu
-            canvasGroup.DOFade(1f, fadeDuration).OnComplete(() =>
-            {
-                SceneManager.LoadScene("Launcher");
-            });
+            var currentLevel = LevelSelectScript.UnlockedLevels;
+            var screenManager = ScreenManager.Instance;
+            SceneManager.LoadScene("Level" + (currentLevel + 1)); // Seviye isimlerini Level1, Level2... olarak kabul ediyoruz.
         }
 
+        public void OnClickLevels()
+        {
+            OpenLevelsMenu();
+        }
         public void OnClickForSettings()
         {
             OpenSettingsMenu();
+        }
+        
+        private async void OpenLevelsMenu()
+        {
+            var screenManager = ScreenManager.Instance;
+
+            await screenManager.OpenScreen(ScreenKeys.LevelSelectMenuScreen, ScreenLayerKeys.FirstLayer);
         }
 
         private async void OpenSettingsMenu()
         {
             var screenManager = ScreenManager.Instance;
 
-            await screenManager.OpenScreen(ScreenKeys.SettingsScreen, ScreenLayerKeys.FirstLayer);
+            await screenManager.OpenScreen(ScreenKeys.SettingsMenuScreen, ScreenLayerKeys.FirstLayer);
         }
         
     }

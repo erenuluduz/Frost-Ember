@@ -22,6 +22,10 @@ namespace _project.Runtime.Core.UI.Scripts.Manager
         {
             Transform layer = null;
 
+            if(clearLayer)
+            {
+                ClearLayer(layerKey);
+            }
             foreach (var screenLayer in Layers)
             {
                 if (screenLayer.Key == layerKey)
