@@ -126,16 +126,12 @@ public class PlayerModel : MonoBehaviour
 
     public void Dashing()
     {
-
-
-     
-
         if (dashTimer <= 0f && Input.GetKeyDown(KeyCode.D))
         {
             currentSpeed = dashSpeed;
             dashing = true;
             invincible = true;
-            dashTimer = 3;
+            dashTimer = 1;
         }
 
         if (dashing)
