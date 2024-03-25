@@ -127,13 +127,15 @@ public class PlayerModel : MonoBehaviour
     public void Dashing()
     {
 
-        dashTimer = 3;
 
-        if (Input.GetKeyDown(KeyCode.D))
+     
+
+        if (dashTimer <= 0f && Input.GetKeyDown(KeyCode.D))
         {
             currentSpeed = dashSpeed;
             dashing = true;
             invincible = true;
+            dashTimer = 3;
         }
 
         if (dashing)
@@ -147,6 +149,12 @@ public class PlayerModel : MonoBehaviour
                 dashing = false;
                 invincible = false;
             }
+            
+        }
+
+        if(dashTimer > 0f)
+        {
+            dashTimer -= Time.deltaTime;
         }
         
 
