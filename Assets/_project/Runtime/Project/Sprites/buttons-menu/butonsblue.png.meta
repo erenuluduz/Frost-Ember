@@ -1,0 +1,1517 @@
+fileFormatVersion: 2
+guid: 6eb7a214798f04d09b8ce1ec49bafdfd
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: butonsblue_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5769
+        width: 1662
+        height: 1742
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbbcdc19b58a7414e9aaf6bf111bd76a
+      internalID: 410624207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_1
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 5784
+        width: 1683
+        height: 1727
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab543add78734bc69c3b0a816752fe2
+      internalID: 2005870220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_2
+      rect:
+        serializedVersion: 2
+        x: 3588
+        y: 6624
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45a04ca778d0846d18da181c67aadc8b
+      internalID: -1510854440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_3
+      rect:
+        serializedVersion: 2
+        x: 3837
+        y: 6602
+        width: 15
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a02172bdf098d4f51b2f5cc071269184
+      internalID: 1337679663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_4
+      rect:
+        serializedVersion: 2
+        x: 5798
+        y: 5769
+        width: 1645
+        height: 1742
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c38b474d785438595a2651f9a6ba65
+      internalID: 1058776541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_5
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 6602
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590d80f6d12b841f7b5c3cb2f8734599
+      internalID: 1603311392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_6
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 6602
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8c842d5a24b46228f341ffe53e27b0
+      internalID: 1688525083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_7
+      rect:
+        serializedVersion: 2
+        x: 3588
+        y: 6580
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ffb92686eda5494290053c11f690ee1
+      internalID: 159794131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_8
+      rect:
+        serializedVersion: 2
+        x: 3837
+        y: 6558
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c1faefe78df4cbb85253fcde1603ad
+      internalID: -531088249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_9
+      rect:
+        serializedVersion: 2
+        x: 3841
+        y: 6514
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b9d958a0cac4484b67b6cb417fa47d
+      internalID: 416724313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_10
+      rect:
+        serializedVersion: 2
+        x: 3844
+        y: 6448
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83bbfc49113e43098f4d016d8754751
+      internalID: -93553937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_11
+      rect:
+        serializedVersion: 2
+        x: 2707
+        y: 5769
+        width: 66
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e91976f81b9487abb712eaddbaecb0
+      internalID: -1783220371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_12
+      rect:
+        serializedVersion: 2
+        x: 2883
+        y: 5780
+        width: 66
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e30719e886741c3b24088a893bbf8a
+      internalID: -1540347523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3836
+        width: 1654
+        height: 1753
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941a5c097d7f44f9e9af96924b672ef5
+      internalID: 2058674208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_14
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 4643
+        width: 14
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15627afef2ff42c9910d3d0add8e6c2
+      internalID: 77365120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_15
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 4665
+        width: 15
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689f54d0d71644873bb3a195fe20c941
+      internalID: 1022243387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_16
+      rect:
+        serializedVersion: 2
+        x: 1928
+        y: 3836
+        width: 1671
+        height: 1753
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfecaf0af25f34ebebfc2bc158bd7c9e
+      internalID: -1603933165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_17
+      rect:
+        serializedVersion: 2
+        x: 3837
+        y: 4643
+        width: 15
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bcda9da5c25646af991fc18e71c29fb
+      internalID: -149452450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_18
+      rect:
+        serializedVersion: 2
+        x: 3844
+        y: 3836
+        width: 1684
+        height: 1753
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044a9ef6467d44077b3a3d8952a86a9e
+      internalID: -274188382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_19
+      rect:
+        serializedVersion: 2
+        x: 5525
+        y: 4621
+        width: 7
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a1e722efe3e4e78a205acbb6ad45a9
+      internalID: 1721557121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_20
+      rect:
+        serializedVersion: 2
+        x: 5770
+        y: 4643
+        width: 18
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eee694d0a97944469c1b3cfd3b1ae1c
+      internalID: 1076004023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_21
+      rect:
+        serializedVersion: 2
+        x: 5774
+        y: 3836
+        width: 1669
+        height: 1753
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd74f52b6a7bf4435a6ca495083764c2
+      internalID: -672743813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_22
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 4599
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce74865ad3d8e4d8c8d75102f6a8e7eb
+      internalID: -960200158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_23
+      rect:
+        serializedVersion: 2
+        x: 1911
+        y: 4533
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40115fe24481e44bca94d6c89b00f525
+      internalID: -807564075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1915
+        width: 1638
+        height: 1738
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050d8386ac4414d5180075c502c0949a
+      internalID: -1021535785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_25
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 1911
+        width: 1695
+        height: 1736
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 143737ae40adb4e1383b42d5bf6450d2
+      internalID: -9324475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_26
+      rect:
+        serializedVersion: 2
+        x: 3812
+        y: 2795
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b000e88a9a44c59aaeecbfa46e37c6
+      internalID: -849267463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_27
+      rect:
+        serializedVersion: 2
+        x: 3826
+        y: 1907
+        width: 3617
+        height: 1746
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95cdb778371f54ccdbca4bc7e66fc324
+      internalID: 2076817033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_28
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 2773
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ff9bf1930dc459db2888a801ab325f
+      internalID: 702959898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_29
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 2729
+        width: 14
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ddb3e0660b047cfa5505dfa95e2264
+      internalID: 926147065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_30
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 2707
+        width: 15
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52dce042501c48bf8910276cbd9c316
+      internalID: 687818588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_31
+      rect:
+        serializedVersion: 2
+        x: 3588
+        y: 2729
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd370e4aba56413782bfb6170fb49ae
+      internalID: 959294883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_32
+      rect:
+        serializedVersion: 2
+        x: 3811
+        y: 2707
+        width: 19
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d558099fd3318484abdd9c3996dd421c
+      internalID: 1969399903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_33
+      rect:
+        serializedVersion: 2
+        x: 3815
+        y: 2663
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db31d51a92c3420ca31a6387188d6b6
+      internalID: 1719771201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_34
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 2619
+        width: 7
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c148b955a91974025816319609477678
+      internalID: -1940317265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_35
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 2641
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7dcd1eb5ddbb41cb95791be4a461404
+      internalID: 1966180664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_36
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 2597
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491dec19c7dac4927841131c0acdf640
+      internalID: 1741612979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_37
+      rect:
+        serializedVersion: 2
+        x: 1911
+        y: 2597
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddedd9c85482944fd8a0576e796aa3e5
+      internalID: -718790054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_38
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 2553
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17cd9990e92ec42faa95250946e242c0
+      internalID: 232566637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_39
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 2553
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73689390fec874831be35cef9bcfaddc
+      internalID: 8211096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_40
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 1911
+        width: 44
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d3d81d746494ccd9f80be1a35de212
+      internalID: -1413974603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_41
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1907
+        width: 22
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace1e445a80264b6ead026f6ca6e299d
+      internalID: 235808098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_42
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1904
+        width: 66
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b3bb27c0b52482a8a6d9c525cff282
+      internalID: -560571144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_43
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 1904
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93fa4bacbc89f45fbb53bfd2ca0d206c
+      internalID: -1230125403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_44
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 1911
+        width: 65
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc71d9831160b4325bde51016c4a1990
+      internalID: 12218090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_45
+      rect:
+        serializedVersion: 2
+        x: 2641
+        y: 1904
+        width: 44
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 904f686d98f8045d7901c9720e964bd6
+      internalID: -1912211329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_46
+      rect:
+        serializedVersion: 2
+        x: 2729
+        y: 1904
+        width: 66
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008636cb0b8dd482d97aa61c2d7e5a5e
+      internalID: 838968283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_47
+      rect:
+        serializedVersion: 2
+        x: 4622
+        y: 1904
+        width: 2025
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1338c57e6664f31be768020d06dd41
+      internalID: 137896959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1641
+        height: 1717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b3a1dd792cc4edeade4903a3224239
+      internalID: -643495857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_49
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 858
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391ac5ff5b85145dab0e1d6120987219
+      internalID: 2112649314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_50
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 858
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad829258bd084810887d76f266c7739
+      internalID: -844882618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_51
+      rect:
+        serializedVersion: 2
+        x: 1915
+        y: 0
+        width: 1676
+        height: 1716
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a30b9aa8dc144fbb5ae958529fd2d1
+      internalID: 906719147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_52
+      rect:
+        serializedVersion: 2
+        x: 3588
+        y: 858
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c00cf1119d5d40959ca8c42c7439dfb
+      internalID: -976174828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_53
+      rect:
+        serializedVersion: 2
+        x: 3822
+        y: 0
+        width: 3621
+        height: 1717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d57c43d09ef42ec9e22ad2be9e7eb3
+      internalID: -1304789228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_54
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 792
+        width: 14
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a28dc4308c048fdac2cb9cbfd76a1e
+      internalID: -667634549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_55
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 770
+        width: 15
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f2955bb4bcfe45639e587062607aded
+      internalID: 1245201433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_56
+      rect:
+        serializedVersion: 2
+        x: 3588
+        y: 748
+        width: 11
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f646896bc20a7447cb0a49f3128b94ff
+      internalID: -630337966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_57
+      rect:
+        serializedVersion: 2
+        x: 3811
+        y: 770
+        width: 19
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1de94c9347e540ea96c493501a160dd
+      internalID: -1462517621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_58
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 704
+        width: 11
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c02f2e6d46b0443b892d9e761e61150
+      internalID: -1070840010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_59
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 660
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9469cb03a0142a68343e5035cb2e8b
+      internalID: 1925380466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_60
+      rect:
+        serializedVersion: 2
+        x: 1911
+        y: 638
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9451985bcd84443c39b05263d39956fc
+      internalID: 450120243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonsblue_61
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 616
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af437447447fb46ec8e08418ec9fac79
+      internalID: 1039329156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      butonsblue_0: 410624207
+      butonsblue_1: 2005870220
+      butonsblue_10: -93553937
+      butonsblue_11: -1783220371
+      butonsblue_12: -1540347523
+      butonsblue_13: 2058674208
+      butonsblue_14: 77365120
+      butonsblue_15: 1022243387
+      butonsblue_16: -1603933165
+      butonsblue_17: -149452450
+      butonsblue_18: -274188382
+      butonsblue_19: 1721557121
+      butonsblue_2: -1510854440
+      butonsblue_20: 1076004023
+      butonsblue_21: -672743813
+      butonsblue_22: -960200158
+      butonsblue_23: -807564075
+      butonsblue_24: -1021535785
+      butonsblue_25: -9324475
+      butonsblue_26: -849267463
+      butonsblue_27: 2076817033
+      butonsblue_28: 702959898
+      butonsblue_29: 926147065
+      butonsblue_3: 1337679663
+      butonsblue_30: 687818588
+      butonsblue_31: 959294883
+      butonsblue_32: 1969399903
+      butonsblue_33: 1719771201
+      butonsblue_34: -1940317265
+      butonsblue_35: 1966180664
+      butonsblue_36: 1741612979
+      butonsblue_37: -718790054
+      butonsblue_38: 232566637
+      butonsblue_39: 8211096
+      butonsblue_4: 1058776541
+      butonsblue_40: -1413974603
+      butonsblue_41: 235808098
+      butonsblue_42: -560571144
+      butonsblue_43: -1230125403
+      butonsblue_44: 12218090
+      butonsblue_45: -1912211329
+      butonsblue_46: 838968283
+      butonsblue_47: 137896959
+      butonsblue_48: -643495857
+      butonsblue_49: 2112649314
+      butonsblue_5: 1603311392
+      butonsblue_50: -844882618
+      butonsblue_51: 906719147
+      butonsblue_52: -976174828
+      butonsblue_53: -1304789228
+      butonsblue_54: -667634549
+      butonsblue_55: 1245201433
+      butonsblue_56: -630337966
+      butonsblue_57: -1462517621
+      butonsblue_58: -1070840010
+      butonsblue_59: 1925380466
+      butonsblue_6: 1688525083
+      butonsblue_60: 450120243
+      butonsblue_61: 1039329156
+      butonsblue_7: 159794131
+      butonsblue_8: -531088249
+      butonsblue_9: 416724313
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

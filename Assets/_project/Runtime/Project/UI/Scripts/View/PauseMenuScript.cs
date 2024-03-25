@@ -16,6 +16,8 @@ namespace _project.Runtime.Project.UI.Scripts.View
         public TMP_Text countdownText;
         public Image blackScreen;
         private float fadeDuration = 2f;
+        public Button soundsOnButton;
+        public Button soundsOffButton;
 
         private void Start()
         {
@@ -24,6 +26,26 @@ namespace _project.Runtime.Project.UI.Scripts.View
                 blackScreen.gameObject.SetActive(false);
             });
            
+        }
+
+        public void OnClickMainMenu()
+        {
+            SceneManager.LoadScene("Menu");
+            Time.timeScale = 1f;
+        }
+
+        public void OnClickSoundOnOffButton() //müzik kısmı eklenecek
+        {
+            if (soundsOnButton.IsActive())
+            {
+                soundsOffButton.gameObject.SetActive(true);
+                soundsOnButton.gameObject.SetActive(false);
+            }
+            else
+            {
+                soundsOffButton.gameObject.SetActive(false);
+                soundsOnButton.gameObject.SetActive(true);
+            }
         }
 
         public void OnClickOption()

@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7ba0cce5f2c499049b059f797aa80979, type: 3}
+  m_Sprite: {fileID: 594960775, guid: f0b8ee43df0d14e8cb0e38c15c3ff748, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -153,7 +153,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 2
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -416,11 +416,15 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 3343855938220185084}
   joystick: {fileID: 0}
   healthBar: {fileID: 0}
-  dashSpeed: 10
-  dashDuration: 1
-  dashCooldown: 1
+  currentSpeed: 0
   moveSpeed: 5.1
-  currenHealth: 0
+  dashSpeed: 10
+  currentHealth: 0
   maxHealth: 10
-  isDashing: 0
-  canDash: 0
+  timer: 0.2
+  dashTimer: 0
+  dashing: 0
+  invincible: 0
+  camStartSize: 1
+  camEndSize: 2
+  camZoomDuration: 2

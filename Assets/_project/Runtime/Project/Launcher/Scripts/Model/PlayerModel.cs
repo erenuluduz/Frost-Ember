@@ -63,13 +63,16 @@ public class PlayerModel : MonoBehaviour
     {
         currentSpeed = moveSpeed;
         dashSpeed = 20;
+        
         rb = GetComponent<Rigidbody2D>();
         
         GameObject mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
         
         mainCamera.GetComponent<Camera>().orthographicSize = camStartSize;
+
         
         mainCamera.GetComponent<Camera>().DOOrthoSize(camEndSize, camZoomDuration).SetEase(Ease.Linear);
+        
     }
 
     // Update is called once per frame
