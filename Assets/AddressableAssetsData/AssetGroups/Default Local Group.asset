@@ -22,13 +22,18 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 27df90f2c8fd44f17827f3da2b263f51
-    m_Address: MainMenuScreen
+  - m_GUID: daa174407b6cc184fad8ad54c324d867
+    m_Address: LevelSelectMenuScreen
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: daa174407b6cc184fad8ad54c324d867
-    m_Address: LevelSelectMenuScreen
+  - m_GUID: 87c0fb1f385fd4710b041a1b248469a6
+    m_Address: GameMenuScreen
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 27df90f2c8fd44f17827f3da2b263f51
+    m_Address: MainMenuScreen
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

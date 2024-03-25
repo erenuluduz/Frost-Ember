@@ -9,8 +9,9 @@ using DG.Tweening;
 
 namespace _project.Runtime.Project.UI.Scripts.View
 {
-    public class PauseMenuScript : MonoBehaviour
+    public class GameScreenView : MonoBehaviour
     {
+        public Slider slider;
         public GameObject pauseMenuUI;
         public GameObject countdownUI;
         public TMP_Text countdownText;
@@ -84,10 +85,7 @@ namespace _project.Runtime.Project.UI.Scripts.View
             pauseMenuUI.SetActive(false);
             Time.timeScale = 1f;
         }
-
-
-
-
+        
         public void OnLevelComplete()
         {
             var levelObject = LevelObject.Instance;

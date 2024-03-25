@@ -414,7 +414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerBullet: {fileID: 4995282437884056634, guid: 0b2fba086d603d54eaf52300fb2071bd, type: 3}
   bulletSpawnPoint: {fileID: 3343855938220185084}
-  joystick: {fileID: 0}
+  joystick: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
   healthBar: {fileID: 0}
   currentSpeed: 0
   moveSpeed: 5.1

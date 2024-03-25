@@ -1,3 +1,4 @@
+using _project.Runtime.Bundle;
 using _project.Runtime.Core.UI.Scripts.Manager;
 using _project.Runtime.Project.Launcher.Scripts.Manager.Bootstrap;
 using DG.Tweening;
@@ -11,11 +12,13 @@ namespace _project.Runtime.Project.UI.Scripts.MenuScripts
     {
         public float fadeDuration = 0.5f;
 
-        public void OnClickContinue()
+        public async void OnClickContinue()
         {
-            var currentLevel = LevelSelectScript.UnlockedLevels;
+            BundleModel.Instance = new BundleModel();
+            
             var screenManager = ScreenManager.Instance;
-            SceneManager.LoadScene("Level" + (currentLevel + 1)); // Seviye isimlerini Level1, Level2... olarak kabul ediyoruz.
+            
+            await screenManager.OpenScreen(ScreenKeys.GameMenuScreen, ScreenLayerKeys.FirstLayer);
         }
 
         public void OnClickLevels()

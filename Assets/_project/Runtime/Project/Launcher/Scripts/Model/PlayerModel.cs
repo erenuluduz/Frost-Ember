@@ -21,8 +21,7 @@ public class PlayerModel : MonoBehaviour
     [SerializeField]
     public FixedJoystick joystick;
     
-    [SerializeField]
-    private HealthBarScripts healthBar;
+    public HealthBarScripts healthBar;
     
 
     [SerializeField]

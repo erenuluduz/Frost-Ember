@@ -17,12 +17,7 @@ namespace _project.Runtime.Core.UI.Scripts.Manager
     public class ScreenManager : SingletonBehaviour<ScreenManager>
     {
         public List<ScreenLayer> Layers;
-
-
-        private void Awake()
-        {
-            DontDestroyOnLoad(this);
-        }
+        
 
         public async Task<GameObject> OpenScreen(string screenKey, string layerKey, bool clearLayer = true)
         {
