@@ -55,7 +55,8 @@ public class PlayerModel : MonoBehaviour
     public float camZoomDuration = 2f;
     private int bulletSize;
 
-
+    private int emptyClickCount =0;
+    
     private void Awake()
     {
         bulletSize = snowBalls.Count - 1;
@@ -84,7 +85,7 @@ public class PlayerModel : MonoBehaviour
         
         move.x = joystick.Horizontal;
         move.y = joystick.Vertical;
-
+        
         Dashing();
     }
     private void FixedUpdate()
@@ -120,32 +121,41 @@ public class PlayerModel : MonoBehaviour
 
     public void OnClickAttack()
     {
-        Instantiate(playerBullet, bulletSpawnPoint.position, Quaternion.identity);
-        BulletModel();
-    }
-
-    public async Task BulletModel()
-    {
-        if (bulletSize > 0)
-        {
-            snowBalls[bulletSize].SetActive(false);
-            bulletSize--;
-        }
-        else
-        {
-            if (bulletSize == 0) 
+        Debug.Log(bulletSize);
+        
+            if (bulletSize > 0)
+            { 
+                Instantiate(playerBullet, bulletSpawnPoint.position, Quaternion.identity);
+                snowBalls[bulletSize].SetActive(false);
+                bulletSize--;
+                emptyClickCount = 0;
+            }
+            else if (bulletSize <= 0)
             {
                 snowBalls[bulletSize].SetActive(false);
+
+                if (emptyClickCount <= 0)
+                {
+                    StartCoroutine(BulletActive());
+                    emptyClickCount++;
+                }
             }
-            await Task.Delay(2000);
-            foreach (var VARIABLE in snowBalls)
+    }
+
+    IEnumerator BulletActive()
+    {
+        yield return new WaitForSeconds(2);
+        foreach (var VARIABLE in snowBalls)
+        {
+            if (VARIABLE.activeSelf != true)
             {
                 VARIABLE.SetActive(true);
             }
-            
-            bulletSize = snowBalls.Count - 1;
         }
+        bulletSize = snowBalls.Count - 1;
+
     }
+    
 
 
     private void Move()

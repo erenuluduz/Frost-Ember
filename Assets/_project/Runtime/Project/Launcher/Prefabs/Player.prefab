@@ -377,7 +377,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!210 &5376913800146438014
 SortingGroup:
@@ -407,6 +407,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 3343855938220185084}
   joystick: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
   healthBar: {fileID: 0}
+  snowBalls: []
   currentSpeed: 0
   moveSpeed: 5.1
   dashSpeed: 10

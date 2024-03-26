@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f7950e43-ff9e-4a67-9dd3-127c74a1b232" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kar-adami/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kar-adami/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Model/PlayerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Model/PlayerModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Prefabs/Screens/GameScreen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Prefabs/Screens/GameScreen.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Prefabs/Screens/MainMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Prefabs/Screens/MainMenu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Scenes/Menu.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,13 +18,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f7237cf7abef49bfbb552d7eb076e422174200/b0/b91e5516/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/derslik3-17/Desktop/Kar-adami/Assets/_project/Runtime/Project/Launcher/Scripts/Model/PlayerModel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/derslik3-17/Desktop/Kar-adami/Assets/_project/Runtime/Project/Launcher/Scripts/Model/PlayerModel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Model/PlayerModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/GridBrush.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.21.20/Runtime/ResourceManager/Util/ComponentSingleton.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -117,13 +116,14 @@
       <workItem from="1711365233009" duration="4341000" />
       <workItem from="1711370415705" duration="1638000" />
       <workItem from="1711399594868" duration="4829000" />
-      <workItem from="1711450331372" duration="3531000" />
+      <workItem from="1711450331372" duration="7167000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="XDebuggerManager">
