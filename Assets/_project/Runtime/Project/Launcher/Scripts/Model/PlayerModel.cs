@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -22,8 +23,9 @@ public class PlayerModel : MonoBehaviour
     public FixedJoystick joystick;
     
     public HealthBarScripts healthBar;
-    
 
+    public List<GameObject> snowBalls;
+    
     [SerializeField]
     private float currentSpeed;
     [SerializeField]
@@ -47,14 +49,16 @@ public class PlayerModel : MonoBehaviour
 
     [SerializeField]
     private bool invincible;
-
+    
     public float camStartSize = 3f;
     public float camEndSize = 5f;
     public float camZoomDuration = 2f;
+    private int bulletSize;
 
 
     private void Awake()
     {
+        bulletSize = snowBalls.Count - 1;
         currentHealth = maxHealth;
         //healthBar.SetMaxHealth(maxHealth);
     }
@@ -95,12 +99,13 @@ public class PlayerModel : MonoBehaviour
             {
                 currentHealth--;
                 healthBar.SetHealth(currentHealth);
+                
                 //Debug.Log("Player took --damage-- and current health ---> " + currenHealth);
                 Destroy(collision.gameObject);
             }
         }
 
-        if (collision.gameObject.CompareTag("HealthPotion"))
+       /* if (collision.gameObject.CompareTag("HealthPotion"))
         {
             if (currentHealth > 0)
             {
@@ -110,13 +115,38 @@ public class PlayerModel : MonoBehaviour
                //Debug.Log("Player took ++HealthPotion++ and current health ---> " + currenHealth);
             }
         }
+        */
     }
-    
+
     public void OnClickAttack()
     {
         Instantiate(playerBullet, bulletSpawnPoint.position, Quaternion.identity);
-
+        BulletModel();
     }
+
+    public async Task BulletModel()
+    {
+        if (bulletSize > 0)
+        {
+            snowBalls[bulletSize].SetActive(false);
+            bulletSize--;
+        }
+        else
+        {
+            if (bulletSize == 0) 
+            {
+                snowBalls[bulletSize].SetActive(false);
+            }
+            await Task.Delay(2000);
+            foreach (var VARIABLE in snowBalls)
+            {
+                VARIABLE.SetActive(true);
+            }
+            
+            bulletSize = snowBalls.Count - 1;
+        }
+    }
+
 
     private void Move()
     {
