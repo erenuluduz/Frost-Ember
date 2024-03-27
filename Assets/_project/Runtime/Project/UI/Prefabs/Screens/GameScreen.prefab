@@ -4405,7 +4405,7 @@ Transform:
   m_GameObject: {fileID: 1448756166535078624}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 345, y: 181, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4554,7 +4554,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2111603883, guid: 176cc93fe440d46088224ba8bc75d66d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8b8ff429b92643c479ec78d239ec6a18, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4657,7 +4657,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 620, y: 300}
+  m_SizeDelta: {x: 750, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7647370115939988419
 CanvasRenderer:
@@ -4687,7 +4687,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1071884426, guid: 176cc93fe440d46088224ba8bc75d66d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ae51eb65cb0f9804b9ff4f55894bbf3e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4820,8 +4820,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 0c089e749f8884b4d8538c518f4bca71, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6424,7 +6424,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -478516211, guid: 176cc93fe440d46088224ba8bc75d66d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5e2c7a25e1397764b8e102429f4dee70, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6771,7 +6771,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -894428948, guid: 176cc93fe440d46088224ba8bc75d66d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0c089e749f8884b4d8538c518f4bca71, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6847,7 +6847,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2074262622, guid: 176cc93fe440d46088224ba8bc75d66d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3d79aa4be9cde9449a69c1fb7375ea6c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7154,7 +7154,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1385091041, guid: 176cc93fe440d46088224ba8bc75d66d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f749029dae7eab544893ec7740ba3269, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7904,7 +7904,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 46334178, guid: 176cc93fe440d46088224ba8bc75d66d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4a72d619ba94aea40ba154d0351a6b91, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8081,7 +8081,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -70}
+  m_AnchoredPosition: {x: 293, y: -130}
   m_SizeDelta: {x: 533.1666, y: 280.4887}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4087934550059571748
@@ -8112,7 +8112,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f3cca88a57ced4590b19a33ec2b99611, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 16822ce0ae0b18443b0d10d61e22ad56, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8151,7 +8151,7 @@ Transform:
   m_GameObject: {fileID: 8938828529004939692}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.697, y: 4.1084, z: 0}
+  m_LocalPosition: {x: -3.06, y: 8.4, z: 0}
   m_LocalScale: {x: 0.2091206, y: 0.2091206, z: 0.2091206}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8197,13 +8197,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: -1469051856, guid: 43274f23aa28e4542aad27e9f1d0c0c0, type: 3}
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 1787686807, guid: 6a4f6b4c358bab44abbaeab56866c024, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 12.848601, y: 17.39}
+  m_Size: {x: 3, y: 4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -8281,8 +8281,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.848601, y: 17.39}
-    newSize: {x: 12.848601, y: 17.39}
+    oldSize: {x: 6, y: 8}
+    newSize: {x: 3, y: 4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -8550,15 +8550,15 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 5eda94a9dcf71e445ad17e3c065d1460, type: 3}
     - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_Color.b
-      value: 0.32941177
+      value: 0.8962264
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_Color.g
-      value: 0.4431373
+      value: 0.84135354
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_Color.r
-      value: 0.11764707
+      value: 0.6552599
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_Pivot.x
@@ -8647,7 +8647,7 @@ PrefabInstance:
     - target: {fileID: 2929252285020698103, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1720530106, guid: 176cc93fe440d46088224ba8bc75d66d, type: 3}
+      objectReference: {fileID: 21300000, guid: 065356255d60d42969e9ae76d4535bf4, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
