@@ -6,8 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="f7950e43-ff9e-4a67-9dd3-127c74a1b232" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kar-adami/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kar-adami/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/SimpleInput/ExtraResources.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Model/PlayerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Model/PlayerModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/UI/son tema/ates etme button.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/UI/son tema/ates etme button.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/UI/son tema/ates etme2 button.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/UI/son tema/ates etme2 button.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/UI/son tema/hızlanma button.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/UI/son tema/hızlanma button.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Prefabs/Screens/GameScreen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Prefabs/Screens/GameScreen.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Prefabs/Screens/MainMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Prefabs/Screens/MainMenu.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,28 +44,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Busecik",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "advanced.settings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Busecik&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/derslik3-17/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache",
-      "/Users/derslik3-17/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache",
-      "/Users/derslik3-17/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/derslik3-17/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/derslik3-17/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache&quot;,
+      &quot;/Users/derslik3-17/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Unity.app/Contents/MacOS/Unity" />
@@ -117,6 +125,7 @@
       <workItem from="1711370415705" duration="1638000" />
       <workItem from="1711399594868" duration="4829000" />
       <workItem from="1711450331372" duration="7167000" />
+      <workItem from="1711535458166" duration="6270000" />
     </task>
     <servers />
   </component>

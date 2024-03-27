@@ -7,6 +7,7 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 using UnityEngine.UIElements.Experimental;
 
 public class PlayerModel : MonoBehaviour
@@ -49,7 +50,11 @@ public class PlayerModel : MonoBehaviour
 
     [SerializeField]
     private bool invincible;
-    
+
+    public Slider reloadSlider;
+    public bool dashButtonClicked;
+    public Button attackButtonOn;
+    public Button attackButtonOff;
     public float camStartSize = 3f;
     public float camEndSize = 5f;
     public float camZoomDuration = 2f;
@@ -136,46 +141,67 @@ public class PlayerModel : MonoBehaviour
 
                 if (emptyClickCount <= 0)
                 {
+                    attackButtonOn.gameObject.SetActive(false);
+                    attackButtonOff.gameObject.SetActive(true);
                     StartCoroutine(BulletActive());
+                    StartCoroutine(TwoSeconds());
+                    StartCoroutine(SliderActive());
                     emptyClickCount++;
                 }
             }
     }
 
+    IEnumerator SliderActive()
+    {
+        reloadSlider.gameObject.SetActive(true);
+        while (reloadSlider.value < 1f)
+        {
+            yield return new WaitForSeconds(0.2f);
+            reloadSlider.value += 0.1f;
+        }
+        reloadSlider.value = 1f;
+        if (reloadSlider.value == 1f)
+        {
+            reloadSlider.gameObject.SetActive(false);
+            reloadSlider.value = 0f;
+        }
+    }
     IEnumerator BulletActive()
     {
-        yield return new WaitForSeconds(2);
         foreach (var VARIABLE in snowBalls)
         {
             if (VARIABLE.activeSelf != true)
             {
+                yield return new WaitForSeconds(0.25f);
                 VARIABLE.SetActive(true);
             }
         }
-        bulletSize = snowBalls.Count - 1;
-
     }
-    
 
+    IEnumerator TwoSeconds()
+    {
+        yield return new WaitForSeconds(2);
+
+        attackButtonOn.gameObject.SetActive(true);
+        attackButtonOff.gameObject.SetActive(false);
+        
+        bulletSize = snowBalls.Count - 1;
+    }
 
     private void Move()
     {
         rb.MovePosition(rb.position + move * currentSpeed * Time.fixedDeltaTime);
     }
 
+    public void OnClickDash()
+    {
+        dashButtonClicked = true;
+    }
     public void Dashing()
     {
-        if (dashTimer <= 0f && Input.GetKeyDown(KeyCode.D))
-        {
-            currentSpeed = dashSpeed;
-            dashing = true;
-            invincible = true;
-            dashTimer = 1;
-        }
-
         if (dashing)
         {
-        timer -= Time.deltaTime;
+            timer -= Time.deltaTime;
 
             if (timer <= 0)
             {
@@ -186,13 +212,21 @@ public class PlayerModel : MonoBehaviour
             }
             
         }
-
         if(dashTimer > 0f)
         {
             dashTimer -= Time.deltaTime;
         }
-        
+    }
 
+    public void OnClickDashing()
+    {
+        if (dashTimer <= 0f && Input.GetKeyDown(KeyCode.D))
+        {
+            currentSpeed = dashSpeed;
+            dashing = true;
+            invincible = true;
+            dashTimer = 1;
+        }
     }
 
 }
