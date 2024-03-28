@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class EnemyBullet : MonoBehaviour
 {
     private GameObject player;
     private Rigidbody2D rb;
@@ -13,6 +13,7 @@ public class Bullet : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
+
 
         Vector3 direction = player.transform.position - transform.position;
         rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
@@ -27,8 +28,10 @@ public class Bullet : MonoBehaviour
         bulletLife += Time.deltaTime;
         if (bulletLife > 6)
         {
-            Destroy(gameObject);
+            ObjectPooler.EnqueueObject(this, "EnemyBullet");
         }
+
+        
     }
     
     private void OnTriggerEnter2D(Collider2D collision)

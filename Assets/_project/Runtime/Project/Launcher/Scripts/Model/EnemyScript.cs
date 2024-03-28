@@ -1,4 +1,4 @@
-using PlasticPipe.PlasticProtocol.Messages;
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -61,7 +61,10 @@ public class EnemyScript : MonoBehaviour
             if (timer <= 0)
             {
                 timer = UnityEngine.Random.Range(2, 5);
-                Instantiate(bulletPrefab, bulletSpawnPoint.position, Quaternion.identity);
+                EnemyBullet instance = ObjectPooler.DequeueObject<EnemyBullet>("EnemyBullet");
+                instance.gameObject.SetActive(true);
+               
+                //Instantiate(bulletPrefab, bulletSpawnPoint.position, Quaternion.identity);
             }
         }
     }
