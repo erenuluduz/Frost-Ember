@@ -6,88 +6,85 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UIElements;
 
+using UnityEngine;
+using UnityEngine.AI;
+
 public class EnemyScript : MonoBehaviour
 {
     private NavMeshAgent agent;
-    
-    [SerializeField]
-    public Transform target;
-    [SerializeField]
-    private Transform bulletSpawnPoint;
-    
-    [SerializeField]
-    private GameObject bulletPrefab;
 
-    
+    [SerializeField] private Transform target;
+    [SerializeField] private Transform bulletSpawnPoint;
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private float maxDistance = 10;
+    [SerializeField] private float shootInterval = 2f;
 
-    [SerializeField]
     private float timer;
-    [SerializeField]
-    private float maxDistance = 10;
-    [SerializeField]
-    private float distance;
 
     public float hp = 3;
+    private bool istargetNotNull;
+
     void Start()
     {
+        istargetNotNull = target != null;
         target = GameObject.FindGameObjectWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
+
+        timer = shootInterval; // Start timer at shootInterval
     }
-    
+
     void Update()
     {
-        shoot();
-        agent.SetDestination(target.position);
+        if (istargetNotNull)
+        {
+            agent.SetDestination(target.position);
+            if (IsPlayerInRange())
+            {
+                Shoot();
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag.Equals("PlayerBullet") == true)
+        if (collision.gameObject.CompareTag("PlayerBullet"))
         {
-            // Play "Hurt" animation here!
             hp--;
             IsDead();
         }
     }
-    
-    #region Attack
-    private void shoot()
+
+    private void Shoot()
     {
-        if (IsPlayerInRange())
+        timer -= Time.deltaTime;
+        if (timer <= 0)
         {
-            timer -= Time.deltaTime;
-            if (timer <= 0)
-            {
-                timer = UnityEngine.Random.Range(2, 5);
-                EnemyBullet instance = ObjectPooler.DequeueObject<EnemyBullet>("EnemyBullet");
-                instance.gameObject.SetActive(true);
-               
-                //Instantiate(bulletPrefab, bulletSpawnPoint.position, Quaternion.identity);
-            }
+            timer = shootInterval; // Reset the timer
+
+            // Instantiate the bullet prefab at the bullet spawn point
+            GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, Quaternion.identity);
+
+            // Calculate the direction towards the player
+            Vector3 direction = (target.position - transform.position).normalized;
+
+            // Set the bullet's velocity to move towards the player
+            float bulletSpeed = 0;
+            bullet.GetComponent<Rigidbody>().velocity = direction * bulletSpeed;
         }
     }
 
     private bool IsPlayerInRange()
     {
-        distance = Vector2.Distance(transform.position, target.position);
-        if (distance < maxDistance)
-        {
-            return true;
-        }
-
-        return false;
+        return Vector3.Distance(transform.position, target.position) < maxDistance;
     }
-    #endregion
 
     private void IsDead()
     {
         if (hp <= 0)
         {
-            // Play "Death" animation here!
             Destroy(gameObject);
         }
     }
-    
 }
