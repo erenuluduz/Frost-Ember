@@ -6,25 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="f7950e43-ff9e-4a67-9dd3-127c74a1b232" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kar-adami/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kar-adami/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Model/EnemyBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Model/EnemyBullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Model/EnemyScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Model/EnemyScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Core/UI/Scripts/Manager/ScreenManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Core/UI/Scripts/Manager/ScreenManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Model/PlayerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Model/PlayerModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/Pixel UI pack 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/Pixel UI pack 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/buttons-menu.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/buttons-menu/butons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/buttons-menu/butons.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/buttons-menu/butonsblue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/buttons-menu/butonsblue.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/buttons-menu/menÅ buttons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/buttons-menu/menÅ buttons.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/buttons-menu/menÅ1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/buttons-menu/menÅ1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/buttons-menu/setting ekranç.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/buttons-menu/setting ekranç.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Prefabs/Screens/GameScreen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Prefabs/Screens/GameScreen.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Scripts/MenuScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Scripts/MenuScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Scripts/View/GameScreenView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Scripts/View/GameScreenView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +25,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/derslik3-17/Desktop/Kar-adami/Assets/_project/Runtime/Project/Launcher/Scripts/Model/PlayerModel.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/derslik3-17/Desktop/Kar-adami/Assets/_project/Runtime/Project/Launcher/Scripts/Model/PlayerModel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Model/PlayerModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_project/Runtime/Project/Test/Scripts/PauseMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/GridBrush.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.21.20/Runtime/ResourceManager/Util/ComponentSingleton.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/09/760a7bd4/Queue`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a19d22dcf90a4588a1b2c49c248263ed174000/4a/251bc321/Object.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{

@@ -5,95 +5,51 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
 using System.Threading.Tasks;
+using _project.Runtime.Core.Singleton;
 using _project.Runtime.Core.UI.Scripts.Manager;
 using _project.Runtime.Project.Launcher.Scripts.Manager.Bootstrap;
 using DG.Tweening;
 
 namespace _project.Runtime.Project.UI.Scripts.View
 {
-    public class GameScreenView : MonoBehaviour
+    public class GameScreenView : SingletonBehaviour<GameScreenView>
     {
-        public Slider slider;
-        public GameObject pauseMenuUI;
-        public GameObject countdownUI;
-        public TMP_Text countdownText;
+
+        public FixedJoystick fixedJoystick;
+        public GameObject player;
+        private Rigidbody2D rb;
         public Image blackScreen;
         private float fadeDuration = 2f;
-        public Button soundsOnButton;
-        public Button soundsOffButton;
-
+        private float currentSpeed = 500f;
+        
+        public Button attackButtonOn;
+        public Button attackButtonOff;
+        public Button dashButtonOn;
+        public Button dashButtonOff;
+        
         private void Start()
         {
             blackScreen.DOFade(0f, fadeDuration).OnComplete(() =>
             {
                 blackScreen.gameObject.SetActive(false);
             });
-           
+            
+            
+            player = GameObject.FindGameObjectWithTag("Player");
+            rb = player.GetComponent<Rigidbody2D>();
         }
-
-        public void OnClickMainMenu()
-        {
-            var screenManager = ScreenManager.Instance;
-            screenManager.OpenScreen(ScreenKeys.MainMenuScreen, ScreenLayerKeys.FirstLayer);
-            Time.timeScale = 1f;
-        }
-
-        public void OnClickSoundOnOffButton() //müzik kısmı eklenecek
-        {
-            if (soundsOnButton.IsActive())
-            {
-                soundsOffButton.gameObject.SetActive(true);
-                soundsOnButton.gameObject.SetActive(false);
-            }
-            else
-            {
-                soundsOffButton.gameObject.SetActive(false);
-                soundsOnButton.gameObject.SetActive(true);
-            }
-        }
-
-        public void OnClickOption()
-        {
-            pauseMenuUI.SetActive(true);
-            Time.timeScale = 0f;
-        }
-
-        async Task Countdown(int seconds)
-        {
-            int counter = seconds;
-            while (counter > 0)
-            {
-                countdownText.text = counter.ToString();
-                counter--;
-                await Task.Delay(1000); 
-            }
-            countdownText.text = "GO!";
-            await Task.Delay(1000); 
-
-            Time.timeScale = 1f;
-            countdownUI.SetActive(false);
-        }
-
-        public void Resume()
-        {
-            pauseMenuUI.SetActive(false);
-            countdownUI.SetActive(true);
-
-            _ = Countdown(3); // Asenkron fonksiyonu başlat
-        }
-
-        public void Reset()
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            pauseMenuUI.SetActive(false);
-            Time.timeScale = 1f;
-        }
-        
+            
         public void OnLevelComplete()
         {
             var levelObject = LevelObject.Instance;
 
             levelObject.UnlockedLevel();
+        }
+
+        private void Update()
+        {
+            rb.MovePosition(rb.position + new Vector2(fixedJoystick.Horizontal,fixedJoystick.Vertical) * currentSpeed * Time.deltaTime);
+            Debug.Log("joystick v" + fixedJoystick.Vertical + "horiz: "+ fixedJoystick.Horizontal);
         }
     }
 }

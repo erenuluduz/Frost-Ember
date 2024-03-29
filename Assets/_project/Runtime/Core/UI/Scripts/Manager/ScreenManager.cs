@@ -13,11 +13,14 @@ namespace _project.Runtime.Core.UI.Scripts.Manager
         public string Key;
         public Transform Layer;
     }
-    
     public class ScreenManager : SingletonBehaviour<ScreenManager>
     {
         public List<ScreenLayer> Layers;
-        
+
+        private void Awake()
+        {
+            DontDestroyOnLoad(gameObject);
+        }
 
         public async Task<GameObject> OpenScreen(string screenKey, string layerKey, bool clearLayer = true)
         {

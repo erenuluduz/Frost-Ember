@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
+using _project.Runtime.Core.Singleton;
+using _project.Runtime.Project.UI.Scripts.View;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -10,7 +12,7 @@ using UnityEngine.Serialization;
 using UnityEngine.UI;
 using UnityEngine.UIElements.Experimental;
 
-public class PlayerModel : MonoBehaviour
+public class PlayerModel : SingletonBehaviour<PlayerModel>
 {
     [SerializeField]
     private GameObject playerBullet;
@@ -20,8 +22,8 @@ public class PlayerModel : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 move;
     
-    [SerializeField]
-    public FixedJoystick joystick;
+    /*[SerializeField]
+    public FixedJoystick joystick;*/
     
     public HealthBarScripts healthBar;
 
@@ -52,7 +54,6 @@ public class PlayerModel : MonoBehaviour
     private bool invincible;
 
     public Slider reloadSlider;
-    public bool dashButtonClicked;
     public Button attackButtonOn;
     public Button attackButtonOff;
     public Button dashButtonOn;
@@ -83,21 +84,28 @@ public class PlayerModel : MonoBehaviour
 
         
         mainCamera.GetComponent<Camera>().DOOrthoSize(camEndSize, camZoomDuration).SetEase(Ease.Linear);
-        
+
+
+
+        attackButtonOn = GameObject.FindGameObjectWithTag("AttackButtonOn").GetComponent<Button>();
+        attackButtonOff = GameObject.FindGameObjectWithTag("AttackButtonOff").GetComponent<Button>();
+        dashButtonOn = GameObject.FindGameObjectWithTag("DashButtonOn").GetComponent<Button>();
+        dashButtonOff = GameObject.FindGameObjectWithTag("DashButtonOff").GetComponent<Button>();
+
+
     }
 
     // Update is called once per frame
     private void Update()
     {
         
-        move.x = joystick.Horizontal;
-        move.y = joystick.Vertical;
-        
+        /*move.x = joystick.Horizontal;
+        move.y = joystick.Vertical;*/
         Dashing();
     }
     private void FixedUpdate()
     {
-        Move();
+        //Move();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -112,18 +120,6 @@ public class PlayerModel : MonoBehaviour
                 Destroy(collision.gameObject);
             }
         }
-
-       /* if (collision.gameObject.CompareTag("HealthPotion"))
-        {
-            if (currentHealth > 0)
-            {
-                
-                currentHealth++;
-                healthBar.SetHealth(currentHealth);
-               //Debug.Log("Player took ++HealthPotion++ and current health ---> " + currenHealth);
-            }
-        }
-        */
     }
 
     public void OnClickAttack()

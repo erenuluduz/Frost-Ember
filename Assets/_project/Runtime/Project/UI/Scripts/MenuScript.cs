@@ -14,6 +14,8 @@ namespace _project.Runtime.Project.UI.Scripts.MenuScripts
 
         public async void OnClickContinue()
         {
+            SceneManager.LoadScene("Game");
+            
             BundleModel.Instance = new BundleModel();
             
             var screenManager = ScreenManager.Instance;

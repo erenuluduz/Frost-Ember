@@ -697,6 +697,8 @@ MonoBehaviour:
   dashButtonClicked: 0
   attackButtonOn: {fileID: 0}
   attackButtonOff: {fileID: 0}
+  dashButtonOn: {fileID: 0}
+  dashButtonOff: {fileID: 0}
   camStartSize: 1
   camEndSize: 2
   camZoomDuration: 2
