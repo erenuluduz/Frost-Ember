@@ -55,6 +55,8 @@ public class PlayerModel : MonoBehaviour
     public bool dashButtonClicked;
     public Button attackButtonOn;
     public Button attackButtonOff;
+    public Button dashButtonOn;
+    public Button dashButtonOff;
     public float camStartSize = 3f;
     public float camEndSize = 5f;
     public float camZoomDuration = 2f;
@@ -192,16 +194,13 @@ public class PlayerModel : MonoBehaviour
     {
         rb.MovePosition(rb.position + move * currentSpeed * Time.fixedDeltaTime);
     }
-
-    public void OnClickDash()
-    {
-        dashButtonClicked = true;
-    }
-    public void Dashing()
+    
+    public void  Dashing()
     {
         if (dashing)
         {
             timer -= Time.deltaTime;
+                Debug.Log(timer);
 
             if (timer <= 0)
             {
@@ -209,6 +208,7 @@ public class PlayerModel : MonoBehaviour
                 currentSpeed = moveSpeed;
                 dashing = false;
                 invincible = false;
+                StartCoroutine(dashtimer());
             }
             
         }
@@ -220,13 +220,22 @@ public class PlayerModel : MonoBehaviour
 
     public void OnClickDashing()
     {
-        if (dashTimer <= 0f && Input.GetKeyDown(KeyCode.D))
+        if (dashTimer <= 0f)
         {
+            dashButtonOn.gameObject.SetActive(false);
+            dashButtonOff.gameObject.SetActive(true);
             currentSpeed = dashSpeed;
             dashing = true;
             invincible = true;
             dashTimer = 1;
         }
+    }
+
+    IEnumerator dashtimer()
+    {
+        yield return new WaitForSeconds(2);
+        dashButtonOn.gameObject.SetActive(true);
+        dashButtonOff.gameObject.SetActive(false);
     }
 
 }

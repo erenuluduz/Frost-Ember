@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
 using System.Threading.Tasks;
+using _project.Runtime.Core.UI.Scripts.Manager;
+using _project.Runtime.Project.Launcher.Scripts.Manager.Bootstrap;
 using DG.Tweening;
 
 namespace _project.Runtime.Project.UI.Scripts.View
@@ -31,7 +33,8 @@ namespace _project.Runtime.Project.UI.Scripts.View
 
         public void OnClickMainMenu()
         {
-            SceneManager.LoadScene("Menu");
+            var screenManager = ScreenManager.Instance;
+            screenManager.OpenScreen(ScreenKeys.MainMenuScreen, ScreenLayerKeys.FirstLayer);
             Time.timeScale = 1f;
         }
 

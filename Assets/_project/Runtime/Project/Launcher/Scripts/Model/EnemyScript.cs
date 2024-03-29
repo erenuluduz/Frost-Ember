@@ -21,17 +21,17 @@ public class EnemyScript : MonoBehaviour
 
     private float timer;
 
-    public float hp = 3;
+    public float hp = 10;
     private bool istargetNotNull;
 
     void Start()
     {
-        istargetNotNull = target != null;
-        target = GameObject.FindGameObjectWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
 
+        istargetNotNull = target != null;
+        target = GameObject.FindGameObjectWithTag("Player").transform;
         timer = shootInterval; // Start timer at shootInterval
     }
 
@@ -58,20 +58,19 @@ public class EnemyScript : MonoBehaviour
 
     private void Shoot()
     {
-        timer -= Time.deltaTime;
-        if (timer <= 0)
+        if (IsPlayerInRange())
         {
-            timer = shootInterval; // Reset the timer
-
-            // Instantiate the bullet prefab at the bullet spawn point
-            GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, Quaternion.identity);
-
-            // Calculate the direction towards the player
-            Vector3 direction = (target.position - transform.position).normalized;
-
-            // Set the bullet's velocity to move towards the player
-            float bulletSpeed = 0;
-            bullet.GetComponent<Rigidbody>().velocity = direction * bulletSpeed;
+            timer -= Time.deltaTime;
+            if (timer <= 0)
+            {
+                timer = UnityEngine.Random.Range(2, 5);
+                EnemyBullet instance = ObjectPooler.DequeueObject<EnemyBullet>("EnemyBullet");
+                
+                instance.transform.position = bulletSpawnPoint.transform.position;
+                instance.gameObject.SetActive(true);
+                instance.Initialize();
+                //Instantiate(bulletPrefab, bulletSpawnPoint.position, Quaternion.identity);
+            }
         }
     }
 
