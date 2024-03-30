@@ -6,15 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="f7950e43-ff9e-4a67-9dd3-127c74a1b232" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kar-adami/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kar-adami/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Core/UI/Scripts/Manager/ScreenManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Core/UI/Scripts/Manager/ScreenManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Model/PlayerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Model/PlayerModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Prefabs/Screens/GameScreen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Prefabs/Screens/GameScreen.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Scripts/MenuScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Scripts/MenuScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/Animations/kardankadçn animasyon/left idle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/Animations/kardankadçn animasyon/left idle.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/Animations/kardankadçn animasyon/left walk.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/Animations/kardankadçn animasyon/left walk.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/Animations/kardankadçn animasyon/right walk.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/Animations/kardankadçn animasyon/right walk.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Scripts/View/GameScreenView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Scripts/View/GameScreenView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,15 +58,15 @@
   },
   &quot;keyToStringList&quot;: {
     &quot;rider.external.source.directories&quot;: [
-      &quot;/Users/derslik3-09/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache&quot;,
-      &quot;/Users/derslik3-09/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache&quot;,
-      &quot;/Users/derslik3-09/.local/share/Symbols/src&quot;
+      &quot;C:\\Users\\fatih\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\fatih\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\fatih\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.16f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -76,7 +74,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.16f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -127,7 +125,8 @@
       <workItem from="1711450331372" duration="7167000" />
       <workItem from="1711535458166" duration="6270000" />
       <workItem from="1711698679174" duration="831000" />
-      <workItem from="1711755817661" duration="2000" />
+      <workItem from="1711755823770" duration="12073000" />
+      <workItem from="1711792920064" duration="3899000" />
     </task>
     <servers />
   </component>

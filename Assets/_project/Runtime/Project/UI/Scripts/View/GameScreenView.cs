@@ -21,6 +21,7 @@ namespace _project.Runtime.Project.UI.Scripts.View
         public TMP_Text countdownText;
         private GameObject player;
         private Rigidbody2D rb;
+        public Vector2 move;
         public float dashTimer;
 
         public GameObject playerBullet;
@@ -52,7 +53,22 @@ namespace _project.Runtime.Project.UI.Scripts.View
         }
         private void Update()
         {
-            rb.MovePosition(rb.position + new Vector2(fixedJoystick.Horizontal, fixedJoystick.Vertical) * currentSpeed * Time.deltaTime);
+            move.x = fixedJoystick.Horizontal;
+            move.y = fixedJoystick.Vertical;
+            rb.MovePosition(rb.position + move * currentSpeed * Time.fixedDeltaTime);
+            Debug.Log("x: " + move.x + "y: " + move.y); 
+            
+            PlayerModel.Instance.animator.SetFloat("Speed",move.x);
+            if (move.x == 0)
+            {
+                PlayerModel.Instance.animator.SetBool("isWalk",false);
+            }
+            else
+            {
+                PlayerModel.Instance.animator.SetBool("isWalk",true);
+
+            }
+                
         }
         
         public void OnClickOption()

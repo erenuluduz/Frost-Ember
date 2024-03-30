@@ -14,66 +14,60 @@ using UnityEngine.UIElements.Experimental;
 
 public class PlayerModel : SingletonBehaviour<PlayerModel>
 {
-    [SerializeField]
-    private GameObject playerBullet;
-    [SerializeField]
-    private Transform bulletSpawnPoint;
-    [SerializeField]
-    private float currentSpeed;
-    [SerializeField]
-    private float moveSpeed;
-    [SerializeField]
-    private float dashSpeed;
-    [SerializeField]
-    private int currentHealth;
-    [SerializeField]
-    private int maxHealth = 10;
-    [SerializeField]
-    private float timer = 0.2f;
-    
+    [SerializeField] private GameObject playerBullet;
+    [SerializeField] private Transform bulletSpawnPoint;
+    [SerializeField] private float currentSpeed;
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float dashSpeed;
+    [SerializeField] private int currentHealth;
+    [SerializeField] private int maxHealth = 10;
+    [SerializeField] private float timer = 0.2f;
+
+    public Animator animator;
     private bool invincible;
     public float camStartSize = 3f;
     public float camEndSize = 5f;
     public float camZoomDuration = 2f;
-    
+
     private void Awake()
     {
         currentHealth = maxHealth;
         //healthBar.SetMaxHealth(maxHealth);
     }
+
     private void Start()
     {
         currentSpeed = moveSpeed;
         dashSpeed = 20;
-        
+
         GameObject mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
         mainCamera.GetComponent<Camera>().orthographicSize = camStartSize;
         mainCamera.GetComponent<Camera>().DOOrthoSize(camEndSize, camZoomDuration).SetEase(Ease.Linear);
     }
 
-    // Update is called once per frame
     private void Update()
     {
-        Dashing();
+        
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("EnemyBullet"))
         {
-            if (currentHealth > 0 && invincible ==false)
+            if (currentHealth > 0 && invincible == false)
             {
                 currentHealth--;
                 HealthBarScripts.Instance.SetHealth(currentHealth);
-                
+
                 //Debug.Log("Player took --damage-- and current health ---> " + currenHealth);
                 Destroy(collision.gameObject);
             }
         }
     }
-    
-    public void  Dashing()
+
+    /*public void  Dashing()
     {
-        if (GameScreenView.Instance.dashing)
+        if (dashing)
         {
             timer -= Time.deltaTime;
             Debug.Log(timer);
@@ -86,7 +80,5 @@ public class PlayerModel : SingletonBehaviour<PlayerModel>
                 StartCoroutine(GameScreenView.Instance.DashButtonActive());
                 Debug.Log("corotine çalıştı");
             }
-        }
-
-    }
+        }*/
 }
