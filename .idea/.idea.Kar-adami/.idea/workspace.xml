@@ -6,13 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="f7950e43-ff9e-4a67-9dd3-127c74a1b232" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kar-adami/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kar-adami/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Manager/PoolManager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Manager/PoolManager/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Model/EnemyScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Model/EnemyScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Model/PlayerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Launcher/Scripts/Model/PlayerModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/Animations/kardankadçn animasyon/left idle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/Animations/kardankadçn animasyon/left idle.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/Animations/kardankadçn animasyon/left walk.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/Animations/kardankadçn animasyon/left walk.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/Animations/kardankadçn animasyon/right walk.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/Animations/kardankadçn animasyon/right walk.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/Animations/kardankadçn animasyon/îlÅm-export.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/Sprites/Animations/kardankadçn animasyon/îlÅm-export.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Prefabs/Screens/GameScreen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Prefabs/Screens/GameScreen.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Scripts/View/GameScreenView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Project/UI/Scripts/View/GameScreenView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_project/Runtime/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_project/Runtime/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,23 +137,4 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_project/Runtime/Core/Singleton/SingletonBehaviour.cs</url>
-          <line>17</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/_project/Runtime/Core/Singleton/SingletonBehaviour.cs" initialLine="17" containingFunctionPresentation="Property 'Instance'">
-            <startOffsets>
-              <option value="389" />
-            </startOffsets>
-            <endOffsets>
-              <option value="437" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
 </project>

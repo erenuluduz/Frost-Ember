@@ -19,7 +19,7 @@ public class PlayerModel : SingletonBehaviour<PlayerModel>
     [SerializeField] private float currentSpeed;
     [SerializeField] private float moveSpeed;
     [SerializeField] private float dashSpeed;
-    [SerializeField] private int currentHealth;
+    [SerializeField] public int currentHealth;
     [SerializeField] private int maxHealth = 10;
     [SerializeField] private float timer = 0.2f;
 

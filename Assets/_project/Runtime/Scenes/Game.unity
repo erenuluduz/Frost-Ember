@@ -5587,7 +5587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f602a256a8978d14b81fac9f70b2fc07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyBullet: {fileID: 3767222998015239822, guid: b50cd707619bafa4da8d5d421ee8d608, type: 3}
+  enemyBulletPrefab: {fileID: 3767222998015239822, guid: b50cd707619bafa4da8d5d421ee8d608, type: 3}
 --- !u!4 &1723766171
 Transform:
   m_ObjectHideFlags: 0
