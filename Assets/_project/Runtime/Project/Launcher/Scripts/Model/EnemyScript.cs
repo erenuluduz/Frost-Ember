@@ -8,6 +8,7 @@ using UnityEngine.UIElements;
 
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class EnemyScript : MonoBehaviour
 {

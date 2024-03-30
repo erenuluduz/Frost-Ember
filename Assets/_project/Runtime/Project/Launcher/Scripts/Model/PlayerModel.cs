@@ -18,56 +18,26 @@ public class PlayerModel : SingletonBehaviour<PlayerModel>
     private GameObject playerBullet;
     [SerializeField]
     private Transform bulletSpawnPoint;
-    
-    private Rigidbody2D rb;
-    private Vector2 move;
-    
-    /*[SerializeField]
-    public FixedJoystick joystick;*/
-    
-    public HealthBarScripts healthBar;
-
-    public List<GameObject> snowBalls;
-    
     [SerializeField]
     private float currentSpeed;
     [SerializeField]
     private float moveSpeed;
     [SerializeField]
     private float dashSpeed;
-
     [SerializeField]
     private int currentHealth;
     [SerializeField]
     private int maxHealth = 10;
-
     [SerializeField]
     private float timer = 0.2f;
-
-    [SerializeField]
-    private float dashTimer = 0;
-
-    [SerializeField]
-    private bool dashing;
-
-    [SerializeField]
+    
     private bool invincible;
-
-    public Slider reloadSlider;
-    public Button attackButtonOn;
-    public Button attackButtonOff;
-    public Button dashButtonOn;
-    public Button dashButtonOff;
     public float camStartSize = 3f;
     public float camEndSize = 5f;
     public float camZoomDuration = 2f;
-    private int bulletSize;
-
-    private int emptyClickCount =0;
     
     private void Awake()
     {
-        bulletSize = snowBalls.Count - 1;
         currentHealth = maxHealth;
         //healthBar.SetMaxHealth(maxHealth);
     }
@@ -76,36 +46,15 @@ public class PlayerModel : SingletonBehaviour<PlayerModel>
         currentSpeed = moveSpeed;
         dashSpeed = 20;
         
-        rb = GetComponent<Rigidbody2D>();
-        
         GameObject mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
-        
         mainCamera.GetComponent<Camera>().orthographicSize = camStartSize;
-
-        
         mainCamera.GetComponent<Camera>().DOOrthoSize(camEndSize, camZoomDuration).SetEase(Ease.Linear);
-
-
-
-        attackButtonOn = GameObject.FindGameObjectWithTag("AttackButtonOn").GetComponent<Button>();
-        attackButtonOff = GameObject.FindGameObjectWithTag("AttackButtonOff").GetComponent<Button>();
-        dashButtonOn = GameObject.FindGameObjectWithTag("DashButtonOn").GetComponent<Button>();
-        dashButtonOff = GameObject.FindGameObjectWithTag("DashButtonOff").GetComponent<Button>();
-
-
     }
 
     // Update is called once per frame
     private void Update()
     {
-        
-        /*move.x = joystick.Horizontal;
-        move.y = joystick.Vertical;*/
         Dashing();
-    }
-    private void FixedUpdate()
-    {
-        //Move();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -114,124 +63,30 @@ public class PlayerModel : SingletonBehaviour<PlayerModel>
             if (currentHealth > 0 && invincible ==false)
             {
                 currentHealth--;
-                healthBar.SetHealth(currentHealth);
+                HealthBarScripts.Instance.SetHealth(currentHealth);
                 
                 //Debug.Log("Player took --damage-- and current health ---> " + currenHealth);
                 Destroy(collision.gameObject);
             }
         }
     }
-
-    public void OnClickAttack()
-    {
-        Debug.Log(bulletSize);
-        
-            if (bulletSize > 0)
-            { 
-                Instantiate(playerBullet, bulletSpawnPoint.position, Quaternion.identity);
-                snowBalls[bulletSize].SetActive(false);
-                bulletSize--;
-                emptyClickCount = 0;
-            }
-            else if (bulletSize <= 0)
-            {
-                snowBalls[bulletSize].SetActive(false);
-
-                if (emptyClickCount <= 0)
-                {
-                    attackButtonOn.gameObject.SetActive(false);
-                    attackButtonOff.gameObject.SetActive(true);
-                    StartCoroutine(BulletActive());
-                    StartCoroutine(TwoSeconds());
-                    StartCoroutine(SliderActive());
-                    emptyClickCount++;
-                }
-            }
-    }
-
-    IEnumerator SliderActive()
-    {
-        reloadSlider.gameObject.SetActive(true);
-        while (reloadSlider.value < 1f)
-        {
-            yield return new WaitForSeconds(0.2f);
-            reloadSlider.value += 0.1f;
-        }
-        reloadSlider.value = 1f;
-        if (reloadSlider.value == 1f)
-        {
-            reloadSlider.gameObject.SetActive(false);
-            reloadSlider.value = 0f;
-        }
-    }
-    IEnumerator BulletActive()
-    {
-        foreach (var VARIABLE in snowBalls)
-        {
-            if (VARIABLE.activeSelf != true)
-            {
-                yield return new WaitForSeconds(0.25f);
-                VARIABLE.SetActive(true);
-            }
-        }
-    }
-
-    IEnumerator TwoSeconds()
-    {
-        yield return new WaitForSeconds(2);
-
-        attackButtonOn.gameObject.SetActive(true);
-        attackButtonOff.gameObject.SetActive(false);
-        
-        bulletSize = snowBalls.Count - 1;
-    }
-
-    private void Move()
-    {
-        rb.MovePosition(rb.position + move * currentSpeed * Time.fixedDeltaTime);
-    }
     
     public void  Dashing()
     {
-        if (dashing)
+        if (GameScreenView.Instance.dashing)
         {
             timer -= Time.deltaTime;
-                Debug.Log(timer);
-
+            Debug.Log(timer);
             if (timer <= 0)
             {
                 timer = 0.2f;
                 currentSpeed = moveSpeed;
-                dashing = false;
+                GameScreenView.Instance.dashing = false;
                 invincible = false;
-                StartCoroutine(dashtimer());
+                StartCoroutine(GameScreenView.Instance.DashButtonActive());
+                Debug.Log("corotine çalıştı");
             }
-            
         }
-        if(dashTimer > 0f)
-        {
-            dashTimer -= Time.deltaTime;
-        }
-    }
 
-    public void OnClickDashing()
-    {
-        if (dashTimer <= 0f)
-        {
-            dashButtonOn.gameObject.SetActive(false);
-            dashButtonOff.gameObject.SetActive(true);
-            currentSpeed = dashSpeed;
-            dashing = true;
-            invincible = true;
-            dashTimer = 1;
-        }
     }
-
-    IEnumerator dashtimer()
-    {
-        yield return new WaitForSeconds(2);
-        dashButtonOn.gameObject.SetActive(true);
-        dashButtonOff.gameObject.SetActive(false);
-    }
-
 }

@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using _project.Runtime.Core.Singleton;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthBarScripts : MonoBehaviour
+public class HealthBarScripts : SingletonBehaviour<HealthBarScripts>
 {
     public Slider slider;
 
