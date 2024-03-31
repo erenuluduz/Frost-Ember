@@ -2521,6 +2521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cb22fd339d5bbe49b8a524f502c1e40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fixedJoystick: {fileID: 0}
   pauseMenuUI: {fileID: 2104376883278342903}
   countdownUI: {fileID: 835594221391304078}
   levelFailUI: {fileID: 5106540620255409754}
