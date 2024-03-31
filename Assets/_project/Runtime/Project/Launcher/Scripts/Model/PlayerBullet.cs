@@ -14,12 +14,12 @@ public class PlayerBullet : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         enemy = GameObject.FindGameObjectWithTag("Enemy");
 
-        Vector3 direction = enemy.transform.position - transform.position;
+        Vector3 direction = enemy.transform.position - transform.position; // düþmanýn konumunu bulup ona ilerler
         rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() // belli bir süre sonra mermiyi kaldýrýr
     {
         bulletLife += Time.deltaTime;
         if (bulletLife > 6)
@@ -29,7 +29,7 @@ public class PlayerBullet : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy")) // düþmana deðerse mermiyi kaldýrýr
         {
             Debug.Log("Enemy Collision happened");
             Destroy(gameObject);

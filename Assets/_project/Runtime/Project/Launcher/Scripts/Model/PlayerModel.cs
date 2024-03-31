@@ -42,7 +42,7 @@ public class PlayerModel : SingletonBehaviour<PlayerModel>
 
         GameObject mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
         mainCamera.GetComponent<Camera>().orthographicSize = camStartSize;
-        mainCamera.GetComponent<Camera>().DOOrthoSize(camEndSize, camZoomDuration).SetEase(Ease.Linear);
+        mainCamera.GetComponent<Camera>().DOOrthoSize(camEndSize, camZoomDuration).SetEase(Ease.Linear); //kamera başlangıçta animasyonlu başlar
     }
 
     private void Update()
@@ -52,7 +52,7 @@ public class PlayerModel : SingletonBehaviour<PlayerModel>
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("EnemyBullet"))
+        if (collision.gameObject.CompareTag("EnemyBullet")) //düşman mermisi değdiğinde mermiyi yok eder ve sağlığı düşürür
         {
             if (currentHealth > 0 && invincible == false)
             {
@@ -65,7 +65,7 @@ public class PlayerModel : SingletonBehaviour<PlayerModel>
         }
     }
 
-    /*public void  Dashing()
+    /*public void  Dashing()                //Dash atmaya yarar ve çok kısa süreliğine ölümsüzlük verir
     {
         if (dashing)
         {

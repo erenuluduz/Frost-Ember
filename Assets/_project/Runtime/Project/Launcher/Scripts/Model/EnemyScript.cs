@@ -29,7 +29,7 @@ public class EnemyScript : MonoBehaviour
 
     void Update()
     {
-        if (istargetNotNull)
+        if (istargetNotNull) //hedef varsa ve player yakýndaysa onun konumuna ateþ eder
         {
             agent.SetDestination(target.position);
             if (IsPlayerInRange())
@@ -41,14 +41,14 @@ public class EnemyScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("PlayerBullet"))
+        if (collision.gameObject.CompareTag("PlayerBullet")) //player'dan mermi geldiðinde saðlýk düþer ve öldü mü diye kontrol eder
         {
             hp--;
             IsDead();
         }
     }
 
-    private void Shoot()
+    private void Shoot() //player yakýndaysa 2 ile 5 saniye arasýnda rastgele bir süre içerisinde player'ýn konumuna ateþ eder (pooldan mermiyi çaðýrýr)
     {
         if (IsPlayerInRange())
         {
@@ -61,17 +61,16 @@ public class EnemyScript : MonoBehaviour
                 instance.transform.position = bulletSpawnPoint.transform.position;
                 instance.gameObject.SetActive(true);
                 instance.Initialize();
-                //Instantiate(bulletPrefab, bulletSpawnPoint.position, Quaternion.identity);
             }
         }
     }
 
-    private bool IsPlayerInRange()
+    private bool IsPlayerInRange() //player'ýn konumundan kendi konumunu çýkartýr ve belirlediðimiz uzaklýk deðiþkeniyle karþýlaþtýrýr
     {
         return Vector3.Distance(transform.position, target.position) < maxDistance;
     }
 
-    private void IsDead()
+    private void IsDead() // saðlýk sýfýr mý diye kontrol eder
     {
         if (hp <= 0)
         {

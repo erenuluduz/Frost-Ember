@@ -14,14 +14,14 @@ public class RoomModel : MonoBehaviour
 
     [SerializeField]private List<GameObject> enemyList = new List<GameObject>();
 
-    private void Awake()
+    private void Awake() // grup sayısını belirler ve düşmanları spawn eder
     {
         enemyGroupCount = Random.Range(2, 4);
         SpawnEnemies();
     }
 
 
-    private void Update()
+    private void Update() // tüm düşmanlar ve gruplar bitti mi diye kontrol eder ve ona göre bir grup düşman daha spawn'lar
     {
         if (IsAllEnemiesDead())
         {
@@ -29,7 +29,7 @@ public class RoomModel : MonoBehaviour
         }
     }
 
-    private void SpawnEnemies()
+    private void SpawnEnemies() // 4 - 7 arasında düşmanları rastege pozisyonlarda spawn eder ve hepsini bir listeye alır, grup sayısından 1 düşürür
     {
         GameObject listedEnemy;
 

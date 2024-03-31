@@ -7,7 +7,7 @@ public static class ObjectPooler
     public static Dictionary<string, Component> poolLookup = new Dictionary<string, Component>();
     public static Dictionary<string, Queue<Component>> poolDictionary = new Dictionary<string, Queue<Component>>();
 
-    public static void EnqueueObject<T>(T item, string name) where T : Component
+    public static void EnqueueObject<T>(T item, string name) where T : Component // objeyi pool queue'ya alýr
     {
         if (!item.gameObject.activeSelf)
         {
@@ -19,7 +19,7 @@ public static class ObjectPooler
         item.gameObject.SetActive(false);
     }
 
-    public static T DequeueObject<T>(string key) where T: Component
+    public static T DequeueObject<T>(string key) where T: Component // objeyi pool queue'dan çýkarýr
     {
         if(poolDictionary[key].TryDequeue(out Component item))
         {
@@ -32,7 +32,7 @@ public static class ObjectPooler
 
 
     }
-    public static T EnqueueNewInstance<T>(T item, string key) where T : Component
+    public static T EnqueueNewInstance<T>(T item, string key) where T : Component // yeni obje enqueue eder
     {
         T newInstance = Object.Instantiate(item);
         newInstance.gameObject.SetActive(false);
@@ -40,7 +40,7 @@ public static class ObjectPooler
         poolDictionary[key].Enqueue(newInstance);
         return newInstance;
     }
-    public static void SetupPool<T>(T pooledItemPrefab, int poolSize, string dictionaryEntry) where T: Component
+    public static void SetupPool<T>(T pooledItemPrefab, int poolSize, string dictionaryEntry) where T: Component // pool'u oluþturur
     {
         poolDictionary.Add(dictionaryEntry, new Queue<Component>());
 
