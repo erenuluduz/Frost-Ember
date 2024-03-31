@@ -1,6 +1,8 @@
+using System;
 using _project.Runtime.Bundle;
 using _project.Runtime.Core.UI.Scripts.Manager;
 using _project.Runtime.Project.Launcher.Scripts.Manager.Bootstrap;
+using _project.Runtime.Project.UI.Scripts.View;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,7 +13,12 @@ namespace _project.Runtime.Project.UI.Scripts.MenuScripts
     public class MenuScript : MonoBehaviour
     {
         public float fadeDuration = 0.5f;
-        public AudioSource clickSound; // Týklama sesi için AudioSource bileþeni
+        public AudioSource clickSound; // Tï¿½klama sesi iï¿½in AudioSource bileï¿½eni
+
+        private void Awake()
+        {
+            GameScreenView.Instance.gamePlay = false;
+        }
 
         public async void OnClickContinue()
         {
@@ -23,10 +30,10 @@ namespace _project.Runtime.Project.UI.Scripts.MenuScripts
             
             await screenManager.OpenScreen(ScreenKeys.GameMenuScreen, ScreenLayerKeys.FirstLayer);
 
-            AudioSource audioSource = FindObjectOfType<AudioSource>(); // Eðer AudioSource component'i bu sahnede mevcut ise, onu bul
+            AudioSource audioSource = FindObjectOfType<AudioSource>(); // Eï¿½er AudioSource component'i bu sahnede mevcut ise, onu bul
             if (audioSource != null)
             {
-                AudioManagement.PlayMusic(audioSource); // Müziði çal
+                AudioManagement.PlayMusic(audioSource); // Mï¿½ziï¿½i ï¿½al
             }
             else
             {
@@ -48,7 +55,7 @@ namespace _project.Runtime.Project.UI.Scripts.MenuScripts
         public void OnClickForSettings()
         {
             OpenSettingsMenu();
-            // Settings butonuna týklandýðýnda týklama sesini çal
+            // Settings butonuna tï¿½klandï¿½ï¿½ï¿½nda tï¿½klama sesini ï¿½al
            
         }
         

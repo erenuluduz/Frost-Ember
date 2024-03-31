@@ -2521,7 +2521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cb22fd339d5bbe49b8a524f502c1e40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fixedJoystick: {fileID: 0}
+  fixedJoystick: {fileID: 8765845539587065332}
   pauseMenuUI: {fileID: 2104376883278342903}
   countdownUI: {fileID: 835594221391304078}
   levelFailUI: {fileID: 5106540620255409754}
@@ -4217,6 +4217,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
+--- !u!114 &8765845539587065332 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
+  m_PrefabInstance: {fileID: 5836737124985975819}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &8765845539587065337 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}

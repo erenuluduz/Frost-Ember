@@ -33,6 +33,7 @@ namespace _project.Runtime.Project.UI.Scripts.View
         private float fadeDuration = 2f;
         private float currentSpeed = 5f;
         public bool dashing;
+        private bool sound;
 
         public GameObject attackButtonOn;
         public GameObject attackButtonOff;
@@ -41,19 +42,16 @@ namespace _project.Runtime.Project.UI.Scripts.View
         public Button soundButtonOn;
         public Button soundButtonOff;
         public Slider reloadSlider;
+        private AudioSource audioSource;
+        public bool gamePlay = true;
+
 
         private void Awake()
         {
-            
-            fixedJoystick = FindObjectOfType<FixedJoystick>();
-            if (fixedJoystick == null)
-            {
-                Debug.LogError("FixedJoystick bulunamadı!");
-            }
+            audioSource = GameObject.FindGameObjectWithTag("AudioSource").GetComponent<AudioSource>();
+            player = GameObject.FindGameObjectWithTag("Player");
             bulletSize = snowBalls.Count - 1;
 
-            player = GameObject.FindGameObjectWithTag("Player");
-            fixedJoystick = FindObjectOfType<FixedJoystick>();
             if (player != null)
             {
                 rb = player.GetComponent<Rigidbody2D>();
@@ -121,6 +119,14 @@ namespace _project.Runtime.Project.UI.Scripts.View
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                 pauseMenuUI.SetActive(false);
                 levelFailUI.SetActive(false);
+                if (sound)
+                {
+                    audioSource.volume = 1;
+                }
+                else
+                {
+                    audioSource.volume = 0;
+                }
                 Time.timeScale = 1f;
             }
 
@@ -128,11 +134,15 @@ namespace _project.Runtime.Project.UI.Scripts.View
             {
                 if (soundButtonOn.gameObject.activeSelf)
                 {
+                    sound = false;
+                    audioSource.volume = 0;
                     soundButtonOff.gameObject.SetActive(true);
                     soundButtonOn.gameObject.SetActive(false);
                 }
                 else
                 {
+                    sound = true;
+                    audioSource.volume = 1;
                     soundButtonOff.gameObject.SetActive(false);
                     soundButtonOn.gameObject.SetActive(true);
                 }
@@ -140,16 +150,18 @@ namespace _project.Runtime.Project.UI.Scripts.View
 
             public async void OnClickMainMenu()
             {
-                SceneManager.LoadScene("Launcher");
+                gamePlay = false;
                 var screenManager = ScreenManager.Instance;
             
                 await screenManager.OpenScreen(ScreenKeys.MainMenuScreen, ScreenLayerKeys.FirstLayer);
             }
+            
+            
             public async void OnClickSettingsMenu()
             {
                 var screenManager = ScreenManager.Instance;
             
-                await screenManager.OpenScreen(ScreenKeys.SettingsMenuScreen, ScreenLayerKeys.FirstLayer);
+                await screenManager.OpenScreen(ScreenKeys.SettingsMenuScreen, ScreenLayerKeys.FirstLayer,false);
             }
         
         
