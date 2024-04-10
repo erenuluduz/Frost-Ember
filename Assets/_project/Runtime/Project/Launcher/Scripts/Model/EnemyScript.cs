@@ -22,14 +22,14 @@ public class EnemyScript : MonoBehaviour
         agent.updateRotation = false;
         agent.updateUpAxis = false;
 
-        istargetNotNull = target != null;
         target = GameObject.FindGameObjectWithTag("Player").transform;
-        timer = shootInterval; // Start timer at shootInterval
+        istargetNotNull = target != null; // Hedef null deðilse true döndürür.
+        timer = shootInterval; // Timer'ý shootInterval ile baþlatýr.
     }
 
     void Update()
     {
-        if (istargetNotNull) //hedef varsa ve player yakýndaysa onun konumuna ateþ eder
+        if (istargetNotNull && target != null) // Hedef varsa ve null deðilse devam eder.
         {
             agent.SetDestination(target.position);
             if (IsPlayerInRange())
@@ -38,6 +38,7 @@ public class EnemyScript : MonoBehaviour
             }
         }
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
