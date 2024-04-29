@@ -4,7 +4,7 @@
 Proje lideri olarak yaptığım görevler: Takımı koordine edip görev dağılımı ayarlamak, Bir hedef belirleyip yol haritasını çizmek, Düşman karakterlerin hareketleri ve saldırıları, Genel olarak projede oluşan bug'ları çözmek
 
 
-Not: Projenin son haline eklenmemiş de olsa procedurally generated harita oluşturma test sahnesinde mevcuttur
+Not: Projenin son haline eklenmemiş de olsa yaptığım procedurally generated harita oluşturma Test sahnesinde mevcuttur
 
 
 
